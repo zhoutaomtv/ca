@@ -1,0 +1,156 @@
+﻿@charset "utf-8";
+.table_stroke {
+	border: 1px solid #969696;
+}
+.form-title {
+	background-color: #c51100;
+	height: 25px;
+}
+.form-title_font {
+	FONT-SIZE: medium;
+	FONT-FAMILY: "微软雅黑";
+	font-weight: bold;
+	color: #ebf0f9;
+}
+body {
+	margin-top: 36px;
+}
+.form-title2{
+	background-color: #d0d08e;
+	height: 20px;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+
+}
+.form-title3{
+	background:#e6e8e7;
+	border:1px solid #808080;
+	height: 28px;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+
+
+}
+.form-label{
+	background:#f9f9f9;
+	border:1px solid #808080;
+	height: 25px;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #333333;
+}
+.form-body{
+	background:#f9f9f9;
+	border:1px solid #808080;
+	height: 25px;
+	text-align:left;
+
+}	
+ .form-body .input{ width:380px; border:1px solid #dcdcdc; margin:10px 0; padding:5px 2px; height:16px; background:#f0f0f0; float:left;}
+ 
+ .form-body  .label { margin:0; width:110px; display:block; padding:10px 0; color:#252525; font: bold 14px Arial, Helvetica, sans-serif; text-transform:capitalize; float:left;}
+
+.table_stroke1 {
+	border-collapse: collapse;
+}
+.table_stroke2{
+	border: 1px solid #ffffff;
+}
+.table_bluebg3{
+     background:#f9f9f9;
+	
+}
+.form-button {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: "宋体";
+	color: #000000;
+	width: 80px;
+}
+.form-input-required {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: "宋体";
+	color: #000000;
+	border: 1px solid #c8c8c8;
+	background-image: url(blank.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 20px;
+}
+.form-input {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: "宋体";
+	color: #000000;
+	border: 1px solid #c8c8c8;
+	height: 20px;
+}
+
+.form-input1 {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: "宋体";
+	color: #000000;
+	border: 1px solid #c8c8c8;
+	height: 20px;
+}
+.form-select {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: "宋体";
+	color: #000000;
+	border: 1px solid #c8c8c8;
+	width: 140px;
+	height: 20px;	
+}
+.form-select1 {
+	FONT-SIZE: 12px;
+	FONT-FAMILY: "宋体";
+	color: #000000;
+	border: 1px solid #c8c8c8;
+	width: 430px;
+	height: 20px;	
+}
+
+.ms-long{
+ FONT-SIZE: 12px;
+	FONT-FAMILY: "宋体";
+	color: #000000;
+	border: 1px solid #c8c8c8;
+	 
+	width:90%;
+	}
+
+.textfield
+{
+	
+}
+
+/* Apply_table */
+
+.Apply_table{
+background-color:#FCFCFC}
+.Apply_table td{
+	height:40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.2em;
+	line-height: 40px;
+	color: #469ACC;
+	font-weight: bold;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 10px;
+	
+}
+.Apply_table .input{
+	border: 2px solid #EEEEEE;
+	height:25px;
+	width:60%;
+}
+.Apply_table .textarea{
+	border: 2px solid #EEEEEE;
+	height:120px;
+	width:60%;
+}
+/* end */

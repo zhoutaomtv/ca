@@ -1,0 +1,394 @@
+﻿<%@ Master Language="C#" %>
+
+<%@ Register TagPrefix="WpNs1" Namespace="Microsoft.SharePoint.Portal.WebControls"
+    Assembly="Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls"
+    Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages"
+    Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssuc" TagName="DesignModeConsole" Src="~/_controltemplates/DesignModeConsole.ascx" %>
+<%@ Register TagPrefix="CAControls" TagName="CAMenu" Src="~/_controltemplates/CAMenuControl.ascx" %>
+<%@ Register TagPrefix="CAControls" TagName="CAActionControl" Src="~/_controltemplates/CAActionControl.ascx" %>
+<%@ Register TagPrefix="CAControls" TagName="CASearch" Src="~/_controltemplates/CASearch.ascx" %>
+<%@ Register Assembly="CA.SharePoint.WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e9fe0b09f36e2f67"
+    Namespace="CA.SharePoint.WebParts" TagPrefix="CAParts" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html id="HTML1" dir="<%$Resources:wss,multipages_direction_dir_value%>" runat="server"
+xmlns:o="urn:schemas-microsoft-com:office:office" __expr-val-dir="ltr">
+<head id="HEAD1" runat="server">
+    <meta name="GENERATOR" content="Microsoft SharePoint">
+    <meta name="progid" content="SharePoint.WebPartPage.Document">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Expires" content="0">
+    <SharePoint:RobotsMetaTag ID="RobotsMetaTag1" runat="server" />
+    <title id="onetidTitle">
+        <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server" />
+    </title>
+    <SharePoint:CssLink ID="CssLink1" runat="server" />
+    <SharePoint:Theme ID="Theme1" runat="server" />
+    <SharePoint:ScriptLink ID="ScriptLink1" Language="javascript" Name="core.js" Defer="true"
+        runat="server" />
+    <SharePoint:CustomJSUrl ID="CustomJSUrl1" runat="server" />
+
+    <script type="text/javascript" src="/_layouts/CAResources/themeCA/js/jquery3.js"></script> 
+    <script type="text/javascript" src="/_layouts/CAResources/themeCA/js/framework.js"></script>   
+    <script type="text/javascript" src="/_layouts/CAResources/themeCA/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript">
+        function disableEnterKey(e) {
+            var key;
+            if (window.event)
+                key = window.event.keyCode; //IE
+            else
+                key = e.which; //firefox     
+
+            return (key != 13);
+        }
+    </script>
+    
+    <SharePoint:SoapDiscoveryLink ID="SoapDiscoveryLink1" runat="server" />
+    <asp:ContentPlaceHolder ID="PlaceHolderAdditionalPageHead" runat="server" />
+    <SharePoint:DelegateControl ID="DelegateControl1" runat="server" ControlId="AdditionalPageHead"
+        AllowMultipleControls="true" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/calendar.css" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/core.css" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/datepicker.css" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/table.css" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/menu.css" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/site.css" />
+    <meta name="Microsoft Theme" content="simple 1011, default">
+</head>
+<body scroll="yes" onload="javascript:if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();" onkeypress="return disableEnterKey(event);" >
+    <form id="Form1" runat="server" onsubmit="return _spFormOnSubmitWrapper();">
+    <WebPartPages:SPWebPartManager ID="m" runat="Server" />
+    <table border="0" align="center" cellpadding="0" cellspacing="0" style="width: 100%;">
+        <asp:ContentPlaceHolder ID="WSSDesignConsole" runat="server">
+            <wssuc:DesignModeConsole id="IdDesignModeConsole" runat="server" />
+        </asp:ContentPlaceHolder>
+        <tr>
+            <td>
+                <!--top -->
+                <table border="0" align="center" cellpadding="0" cellspacing="0" class="top_table">
+                    <tr>
+                        <td height="305" valign="top" background="/_layouts/CAResources/themeCA/images/test.png">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="40">
+                                        <CAControls:CAActionControl runat="server" id="actionctl">
+                                        </CAControls:CAActionControl>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table border="0" align="center" cellpadding="0" cellspacing="0" class="top_table">
+                                <tr>
+                                    <td align="top" valign="top" style="padding-right: 10px">
+                                        
+                                        <div id="top2">
+                                            <CAControls:CASearch runat="server" id="searchcontrol">
+                                            </CAControls:CASearch>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td height="160">
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                            <CAControls:CAMenu runat="server" id="menu">
+                            </CAControls:CAMenu>
+                        </td>
+                    </tr>
+                </table>
+                <!--topend -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="972" height="792" border="0" align="center" cellpadding="0" cellspacing="0"
+                    class="content2">
+                    <tr>
+                        <td style="padding-left: 10px; padding-top: 5px;">
+                            <CAParts:CAQuickNavPart ID="CAQuickNavPart1" runat="server" __WebPartId="{01D9C1F3-82AE-4FB2-AAC3-5442519A8D04}" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="910" valign="top" style="padding-top: 5px">
+                            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="workflow_bj">
+                                <tr>
+                                    <td valign="top">
+                                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" class="workflow_bj">
+                                            <tr>
+                                                <td valign="top" class="workflow_templates_bg">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td class="workflow_top_bg" align="left" valign="middle">
+                                                                <span class="test_h2" style="padding-top: 120px">
+                                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolderWorkFlowName" runat="server">
+                                                                    </asp:ContentPlaceHolder>
+                                                                </span>
+                                                            </td>
+                                                            <td>
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="workflow_mid_bg" style="padding-left: 20px">
+                                                                <table width="680" border="0" align="left" cellpadding="0" cellspacing="0" >
+                                                                    <tr>
+                                                                        <td>
+                                                                            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                                                                            </asp:ContentPlaceHolder>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                            <td>
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="workflow_foot_bg">
+                                                                &nbsp;
+                                                            </td>
+                                                            <td>
+                                                                &nbsp;
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <%-- <table width="972" height="792" border="0" align="center" cellpadding="0" cellspacing="0"
+                    class="content2">
+                    <tr>
+                        <td valign="top">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                <tr>
+                                    <td>
+                                        <asp:ContentPlaceHolder ID="PlaceHolderTitleBreadcrumb" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-left: 10px">
+                                        <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                                        </asp:ContentPlaceHolder>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>--%>
+            </td>
+        </tr>
+    </table>
+    <asp:ContentPlaceHolder ID="PlaceHolderTitleBreadcrumb" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:Panel ID="Panel1" runat="server" Visible="false">
+        <asp:ContentPlaceHolder ID="SPNavigation" runat="server">
+            <SharePoint:DelegateControl ID="DelegateControl11" runat="server" ControlId="PublishingConsole"
+                PrefixHtml="&lt;tr&gt;&lt;td colspan=&quot;4&quot; id=&quot;mpdmconsole&quot; class=&quot;ms-consolemptablerow&quot;&gt;"
+                SuffixHtml="&lt;/td&gt;&lt;/tr&gt;">
+            </SharePoint:DelegateControl>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderFormDigest" runat="server">
+            <SharePoint:FormDigest ID="FormDigest1" runat="server" />
+        </asp:ContentPlaceHolder>
+        <input type="text" name="__spDummyText1" style="display: none;" size="1" />
+        <input type="text" name="__spDummyText2" style="display: none;" size="1" />
+        <asp:ContentPlaceHolder ID="PlaceHolderUtilityContent" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderBodyAreaClass" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleAreaClass" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftActions" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:SiteMapPath SiteMapProvider="SPContentMapProvider" ID="ContentMap" SkipLinkText=""
+            NodeStyle-CssClass="ms-sitemapdirectional" runat="server" />
+        &nbsp;
+        <asp:ContentPlaceHolder ID="PlaceHolderGlobalNavigationSiteMap" runat="server">
+            <asp:SiteMapPath SiteMapProvider="SPSiteMapProvider" ID="GlobalNavigationSiteMap"
+                RenderCurrentNodeAsLink="true" SkipLinkText="" NodeStyle-CssClass="ms-sitemapdirectional"
+                runat="server" />
+        </asp:ContentPlaceHolder>
+        <SharePoint:EncodedLiteral ID="EncodedLiteral1" runat="server" Text="<%$Resources:wss,master_turnoffaccessibility%>"
+            EncodeMethod="HtmlEncode" />
+        <SharePoint:DelegateControl ID="DelegateControl2" runat="server" ControlId="GlobalSiteLink0" />
+        <asp:ContentPlaceHolder ID="PlaceHolderGlobalNavigation" runat="server">
+            <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td colspan="4" class="ms-globalbreadcrumb">
+                        <span id="TurnOnAccessibility" style="display: none"><a href="#" class="ms-skip"
+                            onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();return false;">
+                            <SharePoint:EncodedLiteral ID="EncodedLiteral2" runat="server" Text="<%$Resources:wss,master_turnonaccessibility%>"
+                                EncodeMethod="HtmlEncode" />
+                        </a></span><a id="A1" href="javascript:;" onclick="javascript:this.href='#mainContent';"
+                            class="ms-skip" accesskey="<%$Resources:wss,maincontent_accesskey%>" runat="server">
+                            <SharePoint:EncodedLiteral ID="EncodedLiteral3" runat="server" Text="<%$Resources:wss,mainContentLink%>"
+                                EncodeMethod="HtmlEncode" />
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+        <SharePoint:SiteLogoImage ID="onetidHeadbnnr0" LogoImageUrl="/_layouts/images/titlegraphic.gif"
+            runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderSiteName" runat="server">
+            <h1 class="ms-sitetitle">
+                <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/" ID="onetidProjectPropertyTitle">
+                    <SharePoint:ProjectProperty ID="ProjectProperty1" Property="Title" runat="server" />
+                </SharePoint:SPLinkButton>
+            </h1>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderHorizontalNav" runat="server">
+            <SharePoint:AspMenu ID="TopNavigationMenu" runat="server" DataSourceID="topSiteMap"
+                EnableViewState="false" AccessKey="<%$Resources:wss,navigation_accesskey%>" Orientation="Horizontal"
+                StaticDisplayLevels="2" MaximumDynamicDisplayLevels="1" DynamicHorizontalOffset="0"
+                StaticPopOutImageUrl="/_layouts/images/menudark.gif" StaticPopOutImageTextFormatString=""
+                DynamicHoverStyle-BackColor="#CBE3F0" SkipLinkText="" StaticSubMenuIndent="0"
+                CssClass="ms-topNavContainer">
+                <StaticMenuStyle />
+                <StaticMenuItemStyle CssClass="ms-topnav" ItemSpacing="0px" />
+                <StaticSelectedStyle CssClass="ms-topnavselected" />
+                <StaticHoverStyle CssClass="ms-topNavHover" />
+                <DynamicMenuStyle BackColor="#F2F3F4" BorderColor="#A7B4CE" BorderWidth="1px" />
+                <DynamicMenuItemStyle CssClass="ms-topNavFlyOuts" />
+                <DynamicHoverStyle CssClass="ms-topNavFlyOutsHover" />
+                <DynamicSelectedStyle CssClass="ms-topNavFlyOutsSelected" />
+            </SharePoint:AspMenu>
+            <SharePoint:DelegateControl ID="DelegateControl3" runat="server" ControlId="TopNavigationDataSource">
+                <Template_Controls>
+                    <asp:SiteMapDataSource ShowStartingNode="False" SiteMapProvider="SPNavigationProvider"
+                        ID="topSiteMap" runat="server" StartingNodeUrl="sid:1002" />
+                </Template_Controls>
+            </SharePoint:DelegateControl>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarTop" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBar" runat="server">
+            <div class="ms-quicklaunchouter">
+                <div class="ms-quickLaunch" style="width: 100%">
+                    <h3 class="ms-standardheader">
+                        <label class="ms-hidden">
+                            <SharePoint:EncodedLiteral ID="EncodedLiteral4" runat="server" Text="<%$Resources:wss,quiklnch_pagetitle%>"
+                                EncodeMethod="HtmlEncode" /></label>
+                        <SharePoint:SPSecurityTrimmedControl ID="SPSecurityTrimmedControl1" runat="server"
+                            PermissionsString="ViewFormPages">
+                            <div class="ms-quicklaunchheader">
+                                <SharePoint:SPLinkButton ID="idNavLinkViewAll" runat="server" NavigateUrl="~site/_layouts/viewlsts.aspx"
+                                    Text="<%$Resources:wss,quiklnch_allcontent%>" AccessKey="<%$Resources:wss,quiklnch_allcontent_AK%>" />
+                            </div>
+                        </SharePoint:SPSecurityTrimmedControl>
+                    </h3>
+                    <SharePoint:SPNavigationManager ID="TreeViewNavigationManager" runat="server" ContainedControl="TreeView">
+                        <table class="ms-navSubMenu1" cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td>
+                                    <table class="ms-navheader" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td nowrap id="idSiteHierarchy">
+                                                <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/_layouts/viewlsts.aspx"
+                                                    ID="idNavLinkSiteHierarchy" Text="<%$Resources:wss,treeview_header%>" AccessKey="<%$Resources:wss,quiklnch_allcontent_AK%>" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="ms-treeviewouter">
+                            <SharePoint:SPHierarchyDataSourceControl runat="server" ID="TreeViewDataSource" RootContextObject="Web"
+                                IncludeDiscussionFolders="true" />
+                            <SharePoint:SPRememberScroll runat="server" ID="TreeViewRememberScroll" onscroll="javascript:_spRecordScrollPositions(this);"
+                                Style="overflow: auto; height: 400px; width: 150px;">
+                                <SharePoint:SPTreeView ID="WebTreeView" runat="server" ShowLines="false" DataSourceID="TreeViewDataSource"
+                                    ExpandDepth="0" SelectedNodeStyle-CssClass="ms-tvselected" NodeStyle-CssClass="ms-navitem"
+                                    NodeStyle-HorizontalPadding="2" SkipLinkText="" NodeIndent="12" ExpandImageUrl="/_layouts/images/tvplus.gif"
+                                    CollapseImageUrl="/_layouts/images/tvminus.gif" NoExpandImageUrl="/_layouts/images/tvblank.gif">
+                                </SharePoint:SPTreeView>
+                            </SharePoint:SPRememberScroll>
+                        </div>
+                    </SharePoint:SPNavigationManager>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td>
+                                <table class="ms-recyclebin" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td nowrap>
+                                            <SharePoint:SPLinkButton runat="server" NavigateUrl="~site/_layouts/recyclebin.aspx"
+                                                ID="idNavLinkRecycleBin" ImageUrl="/_layouts/images/recycbin.gif" Text="<%$Resources:wss,StsDefault_RecycleBin%>"
+                                                PermissionsString="DeleteListItems" />
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderPageImage" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleLeftBorder" runat="server">
+            <div class="ms-titleareaframe">
+                <img src="/_layouts/images/blank.gif" width="1" height="100%" alt=""></div>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderPageTitleInTitleArea" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderMiniConsole" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarDataSource" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderCalendarNavigator" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderLeftNavBarBorder" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderNavSpacer" runat="server">
+            <img src="/_layouts/images/blank.gif" width="138" height="1" alt=""></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderTopNavBar" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleRightMargin" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderTitleAreaSeparator" runat="server" />
+        <asp:ContentPlaceHolder ID="PlaceHolderBodyLeftBorder" runat="server">
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="PlaceHolderBodyRightMargin" runat="server">
+        </asp:ContentPlaceHolder>
+        <SharePoint:DelegateControl ID="DelegateControl4" ControlId="GlobalSiteLink1" Scope="Farm"
+            runat="server" />
+        <SharePoint:DelegateControl ID="DelegateControl5" ControlId="GlobalSiteLink2" Scope="Farm"
+            runat="server" />
+        <SharePoint:SPNavigationManager ID="QuickLaunchNavigationManager" runat="server"
+            QuickLaunchControlId="QuickLaunchMenu" ContainedControl="QuickLaunch" EnableViewState="false">
+        </SharePoint:SPNavigationManager>
+        <asp:ContentPlaceHolder ID="PlaceHolderPageDescription" runat="server" />
+        <table width="70%" border="0" cellspacing="2" cellpadding="0">
+            <tr>
+                <td>
+                </td>
+                <td>
+                    <SharePoint:DelegateControl ID="DelegateControl6" ControlId="GlobalSiteLink2" Scope="Farm"
+                        runat="server" />
+                </td>
+                <td>
+                    <SharePoint:DelegateControl ID="DelegateControl7" ControlId="GlobalSiteLink1" Scope="Farm"
+                        runat="server" />
+                </td>
+                <td>
+                    <a href="#" class="home"></a>
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="PlaceHolderSearchArea" runat="server">
+            <SharePoint:DelegateControl ID="DelegateControl8" runat="server" ControlId="SmallSearchInputBox" />
+        </asp:ContentPlaceHolder>
+    </asp:Panel>
+    </form>
+</body>
+</html>

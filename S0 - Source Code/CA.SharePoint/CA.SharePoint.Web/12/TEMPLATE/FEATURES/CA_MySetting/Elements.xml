@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="CA_MySetting"
+     GroupId="PersonalActions"
+     Location="Microsoft.SharePoint.StandardMenu"
+     Sequence="100"
+     Title="修改个人资料"
+     Description="修改个人资料">
+    <UrlAction Url="/_layouts/CA/CA_MySetting.aspx?Source={SiteUrl}"/>
+
+  </CustomAction>
+  
+  
+</Elements>
+<!--ViewToolbar、ViewSelectorMenu 和 PersonalActions-->

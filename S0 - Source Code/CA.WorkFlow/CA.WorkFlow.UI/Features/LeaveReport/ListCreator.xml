@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance
+    Id="LeaveData"
+    Title="LeaveData"
+    FeatureId="{a5ba72e2-332f-46a2-b751-007a87e31dc2}"
+    Description=""
+    TemplateType="9005"
+    Url="Lists/LeaveData"
+    OnQuickLaunch="TRUE"
+    >
+  </ListInstance>
+  <ListInstance
+    Id="LeaveDownloads"
+    Title="LeaveDownloads"
+    FeatureId="{a5ba72e2-332f-46a2-b751-007a87e31dc2}"
+    Description=""
+    TemplateType="9006"
+    Url="Lists/LeaveDownloads"
+    OnQuickLaunch="TRUE"
+    >
+  </ListInstance>
+</Elements>

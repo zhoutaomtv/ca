@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--
+  <ListInstance
+    Id="EmailTemplate"
+    Title="EmailTemplate"
+    FeatureId="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+    Description=""
+    TemplateType="9004"
+    Url="Lists/EmailTemplate"
+    OnQuickLaunch="TRUE"
+    >
+  </ListInstance>
+  <ListInstance
+    Id="Modules"
+    Title="Modules"
+    FeatureId="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+    Description=""
+    TemplateType="9007"
+    Url="Lists/Modules"
+    OnQuickLaunch="TRUE"
+    >
+  </ListInstance>
+  -->
+  <ListInstance
+    Id="Delegates"
+    Title="Delegates"
+    FeatureId="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+    Description=""
+    TemplateType="9008"
+    Url="Lists/Delegates"
+    OnQuickLaunch="TRUE"
+    >
+  </ListInstance>
+</Elements>

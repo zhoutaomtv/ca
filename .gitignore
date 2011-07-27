@@ -1,0 +1,13 @@
+A0 - Project Management
+B1 - Requirement
+B2 - Design
+B3 - Deployment
+B4 - Test
+H0 - HandOver
+S0 - Source Code/ref
+S0 - Source Code/old
+S0 - Source Code/CA.WorkFlow/CA.WorkFlow.UI/bin
+S0 - Source Code/CA.WorkFlow/CA.WorkFlow.UI/obj
+S0 - Source Code/CA.SharePoint/CA.SharePoint.Web/bin
+S0 - Source Code/CA.SharePoint/CA.SharePoint.WebControls/bin
+S0 - Source Code/CA.SharePoint/target

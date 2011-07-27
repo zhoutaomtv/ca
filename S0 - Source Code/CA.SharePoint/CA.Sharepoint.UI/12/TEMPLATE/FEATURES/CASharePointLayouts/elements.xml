@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<!-- Page Layouts -->
+	<Module Name="MCSSharePointPageLayouts" Url="_catalogs/masterpage/MCSSharePoint" Path="PageLayouts" RootWebOnly="TRUE">
+		<File Url="default.aspx" Type="GhostableInLibrary">
+			<Property Name="Title" Value="CA SharePoint 页面布局文件" />
+			<Property Name="MasterPageDescription" Value="CA SharePoint 开发指导实例的演示页面布局文件。" />
+			<Property Name="ContentType" Value="CA SharePoint 演示用内容类型" />
+			<Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/WelcomeSplash.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/WelcomeSplash.png" />
+			<Property Name="PublishingAssociatedContentType" Value=";#CA SharePoint 演示用内容类型;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D0012A91988173542fe998D57BF4EE8E93B;#"/>
+		</File>
+	</Module>
+	<!-- Master Pages -->
+	<Module Name="MCSSharePointMasterPages" Url="_catalogs/masterpage/MCSSharePoint" Path="MasterPages" RootWebOnly="FALSE">
+    <File Url="portal.master" Type="GhostableInLibrary">
+      <Property Name="ContentType" Value="WSS Default Application Template Master Page" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlueBand.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/BlueBand.png" />
+      <Property Name="MasterPageDescription" Value="这是 CA SharePoint 开发指导实例站点用的母版页。" />
+    </File>
+  </Module>
+</Elements>

@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" %>
+
+<%@ Register TagPrefix="WpNs1" Namespace="Microsoft.SharePoint.Portal.WebControls" Assembly="Microsoft.SharePoint.Portal, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="wssuc" TagName="DesignModeConsole" Src="~/_controltemplates/DesignModeConsole.ascx" %>
+<%@ Register TagPrefix="CAControls" TagName="CAMenu" Src="~/_controltemplates/CAMenuControl.ascx" %>
+<%@ Register TagPrefix="CAControls" TagName="CAActionControl" Src="~/_controltemplates/CAActionControl.ascx" %>
+<%@ Register TagPrefix="CAControls" TagName="CASearch" Src="~/_controltemplates/CASearch.ascx" %>
+<%@ Register Assembly="CA.SharePoint.WebParts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=e9fe0b09f36e2f67" Namespace="CA.SharePoint.WebParts" TagPrefix="CAParts" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html dir="ltr">
+<head runat="server">
+    <meta name="GENERATOR" content="Microsoft SharePoint" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <SharePoint:RobotsMetaTag ID="RobotsMetaTag1" runat="server" />
+    <title>
+        <asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server" />
+    </title>
+    <SharePoint:CssLink runat="server" />
+    <SharePoint:Theme runat="server" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/core.css" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/menu.css" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/site.css" />
+    <link type="text/css" rel="stylesheet" href="/_layouts/CAResources/themeCA/css/print.css" />
+    <SharePoint:ScriptLink Name="core.js" Defer="true" runat="server" />
+    <asp:ContentPlaceHolder ID="PlaceHolderAdditionalPageHead" runat="server" />
+</head>
+<body onload="javascript:_spBodyOnLoadWrapper();">
+    <WebPartPages:SPWebPartManager runat="server" />
+    <form runat="server" onsubmit="return _spFormOnSubmitWrapper();">
+    <div class="main-body">
+        <asp:ContentPlaceHolder ID="WSSDesignConsole" runat="server">
+            <wssuc:DesignModeConsole id="IdDesignModeConsole" runat="server" />
+        </asp:ContentPlaceHolder>
+        <div class="ca-header-section noPrint">
+            <table class="inner-table ca-action-bar">
+                <tr>
+                    <td>
+                        <CAControls:CAActionControl runat="server" id="actionctl">
+                        </CAControls:CAActionControl>
+                    </td>
+                </tr>
+            </table>
+            <div class="ca-search-bar">
+                <CAControls:CASearch runat="server" id="searchcontrol">
+                </CAControls:CASearch>
+            </div>
+            <div class="ca-menu-bar">
+                <CAControls:CAMenu runat="server" id="menu">
+                </CAControls:CAMenu>
+            </div>
+        </div>
+        <div class="inner-table main-content">
+            <div class="quick-nav-bar noPrint">
+                <CAParts:CAQuickNavPart ID="CAQuickNavPart1" runat="server" __WebPartId="{01D9C1F3-82AE-4FB2-AAC3-5442519A8D04}" />
+            </div>
+            <div class="ca-workflow-bg">
+                <div class="ca-workflow-templates-bg">
+                    <div class="ca-workflow-header noPrint">
+                        <h3 class="ca-workflow-title">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolderWorkFlowName" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </h3>
+                    </div>
+                    <div class="ca-workflow-form-bg">
+                        <div class="ca-workflow-form full-width">
+                            <asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <asp:ContentPlaceHolder ID="PlaceHolderNotes" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <div class="ca-workflow-footer">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

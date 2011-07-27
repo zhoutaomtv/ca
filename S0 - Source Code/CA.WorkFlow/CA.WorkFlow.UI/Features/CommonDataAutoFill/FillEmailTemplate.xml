@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance
+    Id="EmailTemplate"
+    Title="EmailTemplate"
+    FeatureId="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+    Description=""
+    TemplateType="9004"
+    Url="Lists/EmailTemplate"
+    OnQuickLaunch="TRUE"
+    >
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[NonTradeSupplierSetupMaintenance]]>
+          </Field>
+          <Field Name="Subject">
+            <![CDATA[Non Trade Supplier Setup & Maintenance Notification]]>
+          </Field>
+          <Field Name="Body">
+            <![CDATA[
+<html> 
+<body>Dear {0},<br /><br /> 
+The following Supplier Setup & Maintenance Application had been {1}. <br /> 
+<font color='blue'>Type: {2}</font><br />
+<font color='blue'>Vendor ID: {3}</font><br />
+<font color='blue'>Applicant: {4}</font><br />
+<font color='blue'>Approved by: {5}</font><br />
+<font color='blue'>Rejected by: {6}</font><br /> 
+
+<br/> 
+Please view the detailed information by <a href='{7}' target="_blank">clicking here</a>! 
+<br/> <br/> 
+-EWF System Account 
+
+</body> 
+</html>
+            ]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[InternalOrderCreation]]>
+          </Field>
+          <Field Name="Subject">
+            <![CDATA[Internal Order Creation Notification]]>
+          </Field>
+          <Field Name="Body">
+            <![CDATA[
+<html> 
+<body>Dear {0},<br /><br /> 
+The following Internal Order Creation Application had been {1}. <br /> 
+<font color='blue'>Internal Order Type: {2}</font><br /> 
+<font color='blue'>Internal Order ID: {3}</font><br /> 
+<font color='blue'>Applicant: {4}</font><br /> 
+<font color='blue'>Approved by: {5}</font><br /> 
+<font color='blue'>Rejected by: {6}</font><br /> 
+
+<br/> 
+Please view the detailed information by <a href='{7}' target="_blank">clicking here</a>! 
+<br/> <br/> 
+-EWF System Account 
+
+</body> 
+</html>
+            ]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[InternalOrderMaintance]]>
+          </Field>
+          <Field Name="Subject">
+            <![CDATA[Internal Order Maintance Notification]]>
+          </Field>
+          <Field Name="Body">
+            <![CDATA[
+<html> 
+<body>Dear {0},<br /><br /> 
+The following Internal Order Maintenance Application had been {1}. <br /> 
+<font color='blue'>Change Type: {2}</font><br />
+<font color='blue'>Internal Order ID: {3}</font><br />
+<font color='blue'>Applicant: {4}</font><br />
+<font color='blue'>Approved by: {5}</font><br />
+<font color='blue'>Rejected by: {6}</font><br /> 
+
+<br/> 
+Please view the detailed information by <a href='{7}' target="_blank">clicking here</a>! 
+<br/> <br/> 
+-EWF System Account 
+
+</body> 
+</html>
+            ]]>
+          </Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

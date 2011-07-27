@@ -1,0 +1,3 @@
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">	
+	<Control Id="ProfileRedirection" Sequence="95" ControlSrc="~/_controltemplates/CAProfileRedirection.ascx"/>
+</Elements>

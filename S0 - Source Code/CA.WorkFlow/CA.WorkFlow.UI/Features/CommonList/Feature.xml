@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature  Id="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+          Title="Common List"
+		  Description="Create list template and list for common function"
+          Scope="Web"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ListTemplate.xml" />
+    <ElementManifest Location="ListCreator.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Document Library Toolbar New Menu Dropdown -->
+  <CustomAction Id="UserInterfaceCustomActions.DocLibNewToolbar"
+    RegistrationType="List"
+    RegistrationId="101"
+    GroupId="NewMenu"
+    Rights="ManagePermissions"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="1000"               
+    Title="MY DOCLIB NEW MENU TOOLBAR BUTTON">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?NewMenu"/>
+  </CustomAction>
+  <!-- Document Library Toolbar Upload Menu Dropdown -->
+  <CustomAction Id="UserInterfaceCustomActions.DocLibUploadToolbar"
+    RegistrationType="List"
+    RegistrationId="101"
+    GroupId="UploadMenu"
+    Rights="ManagePermissions"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="1000"
+    Title="MY DOCLIB UPLOAD MENU TOOLBAR BUTTON">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?UploadMenu"/>
+  </CustomAction>
+  <!-- Document Library Toolbar Actions Menu Dropdown -->
+  <CustomAction Id="UserInterfaceCustomActions.DocLibActionsToolbar"
+    RegistrationType="List"
+    RegistrationId="101"
+    GroupId="ActionsMenu"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="1000"
+    Title="MY DOCLIB ACTIONS MENU TOOLBAR BUTTON">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?ActionsMenu"/>
+  </CustomAction>
+  <!-- Document Library Toolbar Settings Menu Dropdown -->
+  <CustomAction Id="UserInterfaceCustomActions.DocLibSettingsToolbar"
+    RegistrationType="List"
+    RegistrationId="101"
+    GroupId="SettingsMenu"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="1000"
+    Title="MY DOCLIB SETTINGS MENU TOOLBAR BUTTON">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?SettingsMenu"/>
+  </CustomAction>
+  <!-- Site Actions Dropdown -->
+  <CustomAction Id="UserInterfaceCustomActions.SiteActionsToolbar"
+    GroupId="SiteActions"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="1000"
+    Title="MY SITE ACTIONS BUTTON">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?SiteActions"/>
+  </CustomAction>
+  <!-- Per Item Dropdown (ECB)-->
+  <CustomAction
+    Id="UserInterfaceCustomActions.ECBItemToolbar"
+    RegistrationType="List"
+    RegistrationId="101"
+    GroupId="ECBItem"
+    Location="EditControlBlock"
+    Sequence="106"
+    Title="MY ECB ITEM">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?ECBItem"/>
+  </CustomAction>
+  <!-- Display Form Toolbar -->
+  <CustomAction
+    Id="UserInterfaceCustomActions.DisplayFormToolbar"
+    RegistrationType="List"
+    RegistrationId="101"
+    Location="DisplayFormToolbar"
+    Sequence="106"
+    Title="MY DISPLAY FORM TOOLBAR">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?DisplayFormToolbar"/>
+  </CustomAction>
+  <!-- Edit Form Toolbar -->
+  <CustomAction
+    Id="UserInterfaceCustomActions.EditFormToolbar"
+    RegistrationType="List"
+    RegistrationId="101"
+    Location="EditFormToolbar"
+    Sequence="106"
+    Title="MY EDIT FORM TOOLBAR">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?EditFormToolbar"/>
+  </CustomAction>
+  <!-- Site Settings -->
+  <CustomAction
+    Id="UserInterfaceCustomActions.SiteSettings"
+    GroupId="Customization"
+    Location="Microsoft.SharePoint.SiteSettings"
+    Sequence="106"
+    Title="MY SITE SETTINGS LINK">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?Customization"/>
+  </CustomAction>
+  <!-- Content Type Settings -->
+  <CustomAction
+    Id="UserInterfaceCustomActions.ContentTypeSettings"
+    GroupId="General"
+    Location="Microsoft.SharePoint.ContentTypeSettings"
+    Sequence="106"
+    Title="MY CONTENT TYPE SETTINGS LINK">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?General"/>
+  </CustomAction>
+  <!-- ViewToolbar -->
+  <CustomAction
+    Id="UserInterfaceCustomActions.ViewToolbar"
+    GroupId="ViewToolbar"
+    Location="Microsoft.SharePoint.ViewToolbar"
+    Sequence="106"
+    Title="MY CONTENT TYPE SETTINGS LINK">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?General"/>
+  </CustomAction>
+  <!-- ViewSelectorMenu -->
+  <CustomAction
+    Id="UserInterfaceCustomActions.ViewSelectorMenu"
+    GroupId="ViewSelectorMenu"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="106"
+    Title="MY CONTENT TYPE SETTINGS LINK">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?ViewSelectorMenu"/>
+  </CustomAction>
+  <!-- ViewSelectorMenu -->
+  <CustomAction
+    Id="UserInterfaceCustomActions.PersonalActions"
+    GroupId="PersonalActions"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="106"
+    Title="MY CONTENT TYPE SETTINGS LINK">
+    <UrlAction Url="/_layouts/CA/CustomActionsHello.aspx?PersonalActions"/>
+  </CustomAction>
+</Elements>
+<!--ViewToolbar、ViewSelectorMenu 和 PersonalActions-->

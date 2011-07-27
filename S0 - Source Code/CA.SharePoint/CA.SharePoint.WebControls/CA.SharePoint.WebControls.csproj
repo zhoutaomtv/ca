@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C413BFBE-1974-4047-B152-75855039E4D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CA.SharePoint.WebControls</RootNamespace>
+    <AssemblyName>CA.SharePoint.WebControls</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>CA.SharePoint.Web.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\target\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeArt.SharePoint.CamlQuery, Version=1.0.0.0, Culture=neutral, PublicKeyToken=43536cfde91ea799, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\CodeArt.SharePoint.CamlQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet, Version=27.3.0.1008, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebControls\AllTasks.ascx" />
+    <Content Include="WebControls\CALeaveData.ascx" />
+    <Content Include="WebControls\WorkFlowHistoryNav.ascx" />
+    <Content Include="WebControls\DepartmentNews.ascx" />
+    <Content Include="WebControls\CompanyNavigator.ascx" />
+    <Content Include="WebControls\DeptDescription.ascx" />
+    <Content Include="WebControls\MoreOrganization.ascx" />
+    <Content Include="WebControls\Organization.ascx" />
+    <Content Include="WebControls\QuickNavigator.ascx" />
+    <Content Include="WebControls\RedirectToUserDetails.ascx" />
+    <Content Include="WebControls\Tasks.ascx" />
+    <Content Include="WebControls\UserDetails.ascx" />
+    <Content Include="WebControls\WorkFlowNav.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebControls\AllTasks.ascx.cs">
+      <DependentUpon>AllTasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\AllTasks.ascx.designer.cs">
+      <DependentUpon>AllTasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\CABannerOR.ascx.cs">
+      <DependentUpon>CABannerOR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\CABannerOR.ascx.designer.cs">
+      <DependentUpon>CABannerOR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\CABannerSR.ascx.cs">
+      <DependentUpon>CABannerSR.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\CABannerSR.ascx.designer.cs">
+      <DependentUpon>CABannerSR.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\CALeaveBalance.ascx.cs">
+      <DependentUpon>CALeaveBalance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\CALeaveBalance.ascx.designer.cs">
+      <DependentUpon>CALeaveBalance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\CALeaveData.ascx.cs">
+      <DependentUpon>CALeaveData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\CALeaveData.ascx.designer.cs">
+      <DependentUpon>CALeaveData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\CALeaveReport.ascx.cs">
+      <DependentUpon>CALeaveReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\CALeaveReport.ascx.designer.cs">
+      <DependentUpon>CALeaveReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\Handler1.ashx.cs">
+      <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\ImportLeaveBalance.ascx.cs">
+      <DependentUpon>ImportLeaveBalance.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\ImportLeaveBalance.ascx.designer.cs">
+      <DependentUpon>ImportLeaveBalance.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\WorkFlowHistoryNav.ascx.cs">
+      <DependentUpon>WorkFlowHistoryNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\WorkFlowHistoryNav.ascx.designer.cs">
+      <DependentUpon>WorkFlowHistoryNav.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\DepartmentNews.ascx.cs">
+      <DependentUpon>DepartmentNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\DepartmentNews.ascx.designer.cs">
+      <DependentUpon>DepartmentNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ServerControls\AttachmentField.cs" />
+    <Compile Include="ServerControls\Common.cs" />
+    <Compile Include="ServerControls\PermissionControl.cs" />
+    <Compile Include="WebControls\CompanyNavigator.ascx.cs">
+      <DependentUpon>CompanyNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\CompanyNavigator.ascx.designer.cs">
+      <DependentUpon>CompanyNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\DeptDescription.ascx.cs">
+      <DependentUpon>DeptDescription.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\DeptDescription.ascx.designer.cs">
+      <DependentUpon>DeptDescription.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\MoreOrganization.ascx.cs">
+      <DependentUpon>MoreOrganization.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\MoreOrganization.ascx.designer.cs">
+      <DependentUpon>MoreOrganization.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\Organization.ascx.cs">
+      <DependentUpon>Organization.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\Organization.ascx.designer.cs">
+      <DependentUpon>Organization.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebControls\QuickNavigator.ascx.cs">
+      <DependentUpon>QuickNavigator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\QuickNavigator.ascx.designer.cs">
+      <DependentUpon>QuickNavigator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\RedirectToUserDetails.ascx.cs">
+      <DependentUpon>RedirectToUserDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\RedirectToUserDetails.ascx.designer.cs">
+      <DependentUpon>RedirectToUserDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\Tasks.ascx.cs">
+      <DependentUpon>Tasks.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\Tasks.ascx.designer.cs">
+      <DependentUpon>Tasks.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\UserDetails.ascx.cs">
+      <DependentUpon>UserDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\UserDetails.ascx.designer.cs">
+      <DependentUpon>UserDetails.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebControls\WorkFlowNav.ascx.cs">
+      <DependentUpon>WorkFlowNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\WorkFlowNav.ascx.designer.cs">
+      <DependentUpon>WorkFlowNav.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CA.SharePoint.Web.snk" />
+    <Content Include="WebControls\CABannerOR.ascx" />
+    <Content Include="WebControls\CABannerSR.ascx" />
+    <Content Include="WebControls\CALeaveBalance.ascx" />
+    <Content Include="WebControls\CALeaveReport.ascx" />
+    <Content Include="WebControls\Handler1.ashx" />
+    <Content Include="WebControls\ImportLeaveBalance.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CA.SharePoint.Utilities\CA.SharePoint.Utilities.csproj">
+      <Project>{EFFC1125-4727-4BCE-8AE0-B519ECBABD85}</Project>
+      <Name>CA.SharePoint.Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2469</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

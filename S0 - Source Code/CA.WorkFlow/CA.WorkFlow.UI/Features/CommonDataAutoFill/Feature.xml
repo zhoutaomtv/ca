@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature  Id="{1f0dc8dc-7ffc-4fc0-a5c2-02a4c5e586da}"
+          Title="Common List Data Auto Fill"
+		  Description="Auto fill data for common list"
+          Scope="Web"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="FillEmailTemplate.xml" />
+    <ElementManifest Location="FillModules.xml" />
+  </ElementManifests>
+</Feature>

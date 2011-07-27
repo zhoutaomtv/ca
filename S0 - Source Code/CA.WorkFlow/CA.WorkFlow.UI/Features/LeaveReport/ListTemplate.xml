@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate
+      FeatureId="{a5ba72e2-332f-46a2-b751-007a87e31dc2}"
+      BaseType="0"
+      Category="Custom Lists"
+      Name="LeaveData"
+      DisplayName="LeaveData"
+      Description=""
+      DisableAttachments="True"
+      DisallowContentTypes="False"
+      EnableModeration="False"
+      FolderCreation="False"
+      Hidden="False"
+      HiddenList="False"
+      OnQuickLaunch="True"
+      SecurityBits="11"
+      Sequence="500"
+      Type="9005"
+      VersioningEnabled="FALSE">
+  </ListTemplate>
+  <ListTemplate
+      FeatureId="{a5ba72e2-332f-46a2-b751-007a87e31dc2}"
+      BaseType="0"
+      Category="Custom Lists"
+      Name="LeaveDownloads"
+      DisplayName="LeaveDownloads"
+      Description=""
+      DisableAttachments="True"
+      DisallowContentTypes="False"
+      EnableModeration="False"
+      FolderCreation="False"
+      Hidden="False"
+      HiddenList="False"
+      OnQuickLaunch="True"
+      SecurityBits="11"
+      Sequence="500"
+      Type="9006"
+      VersioningEnabled="FALSE">
+  </ListTemplate>
+</Elements>

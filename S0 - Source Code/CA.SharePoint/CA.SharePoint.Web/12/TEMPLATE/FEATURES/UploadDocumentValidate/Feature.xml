@@ -1,0 +1,12 @@
+<Feature  Id="4E1924E7-F8C3-4585-A308-4C9BA4F4F7B9"
+          Title="$Resources:ca,Upload_Document_Validate_Title;"
+          Description="$Resources:ca,Upload_Document_Validate_Feature_Des;"      
+          Scope="Web"
+          Hidden="FALSE"
+          DefaultResourceFile="ca"
+          xmlns="http://schemas.microsoft.com/sharepoint/" >
+	<ElementManifests>
+		<ElementManifest Location="Elements.xml"/>
+	</ElementManifests>
+	
+</Feature>

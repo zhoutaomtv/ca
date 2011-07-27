@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature Id="592240CB-CB98-4a8f-AB07-63954E3D23D6"
+    Title="CA My Setting"
+    Description="This example shows how you can customize various areas inside Windows SharePoint Services."
+    Version="1.0.0.0"
+    Scope="Site"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="Elements.xml" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,853 @@
+/* _lcid="1033" _version="12.0.4518"
+_LocalBinding */
+.ms-calheader{
+background-color:#e3efff;
+}
+.ms-cal-navselected,.ms-cal-nav{
+font-size:8pt;
+}
+span.ms-cal-navselected a{
+text-decoration:none;
+color:#000000;
+font-weight:bold;
+}
+.ms-cal-navselected a:hover{
+text-decoration:underline;
+color:#000000;
+}
+td a.ms-cal-nav{
+color:#003399;
+text-decoration:none;
+font-weight:normal;
+}
+span.ms-cal-nav a,span.ms-cal-nav a:visited{
+color:#003399;
+text-decoration:none;
+font-weight:normal;
+}
+span.ms-cal-nav a:hover{
+color:#000000;
+text-decoration:underline;
+font-weight:normal;
+}
+.ms-cal-nav a:hover{
+color:#000000;
+text-decoration:underline;
+font-weight:normal;
+}
+.ms-cal-nav img,.ms-cal-navselected img{
+vertical-align:middle;
+}
+.ms-cal-weekempty,.ms-cal-weekemptyRTL{
+background-color:#e3efff;
+width:18px;
+font-size:2px;
+}
+.ms-cal-weekname{
+background-color:#e3efff;
+width:14.5%;
+}
+.ms-cal-weekday{
+background-color:#e3efff;
+color:#7f7f7f;
+padding:2px;
+font-weight:normal;
+}
+.ms-cal-week,.ms-cal-weekB,.ms-cal-weekRTL,.ms-cal-weekRTLB{
+background-image:url("/_layouts/images/weekbox.gif");
+background-repeat:repeat-y;
+background-color:#c2dcff;
+border:1px solid #6f9dd9;
+}
+.ms-cal-weekselected,.ms-cal-weekselectedRTL{
+border:1px solid #83b0ec;
+cursor:pointer;
+background-color:#e3efff;
+}
+.ms-cal-weekselected a,.ms-cal-weekselectedRTL a{
+color:#000000;
+text-decoration:none;
+cursor:pointer;
+}
+.ms-cal-weekbox,.ms-cal-weekboxRTL{
+width:15px;
+}
+.ms-cal-topday,.ms-cal-topdayL,.ms-cal-wtopdayL,.ms-cal-wtopday{
+background-image:url("/_layouts/images/calnumBttn.gif");
+background-repeat:repeat-x;
+background-color:#d6e8ff;
+border:solid 1px #6f9dd9;
+font-weight:bold;
+color:#000000;
+text-align:left;
+}
+.ms-cal-topdayRTL,.ms-cal-topdayRTLL,.ms-cal-wtopdayRTL,.ms-cal-wtopdayRTLL{
+background-image:url("/_layouts/images/calnumBttn.gif");
+background-repeat:repeat-x;
+background-color:#ffda8a;
+border:solid 1px #6f9dd9;
+font-weight:bold;
+color:#000000;
+text-align:right;
+}
+.ms-cal-wtopday{
+border-right:none;
+}
+.ms-cal-wtopdayRTL{
+border-left:none;
+}
+.ms-cal-topday div,.ms-cal-topdayRTL div,.ms-cal-topdayL div,.ms-cal-topdayRTLL div,
+.ms-cal-wtopday div,.ms-cal-wtopdayL div,.ms-cal-wtopdayRTL div,.ms-cal-wtopdayRTLL div,
+.ms-cal-wtopdayfocus div,.ms-cal-wtopdayfocusL div,.ms-cal-wtopdayfocusRTL div,.ms-cal-wtopdayfocusRTLL div,
+.ms-cal-wtopday-today div,.ms-cal-wtopday-todayRTL div{
+font-weight:bold;
+padding:1px 1px 2px 5px;
+}
+.ms-cal-wtopdayL div span,.ms-cal-wtopday div span,.ms-cal-wtopdayRTL div span,.ms-cal-wtopdayRTLL div span,
+.ms-cal-wtopdayLover div span,.ms-cal-wtopdayover div span,.ms-cal-wtopdayRTLover div span,.ms-cal-wtopdayRTLLover div span,
+.ms-cal-wtopday-today div span,.ms-cal-wtopdayfocus div span,.ms-cal-wtopdayfocusL div span,.ms-cal-wtopdayfocusRTLL div span,
+.ms-cal-wtopdayfocusRTL div span,.ms-cal-wtopday-todayover div span,.ms-cal-wtopday-todayRTLover div span,
+.ms-cal-wtopday-todayRTL div span,.ms-cal-wtopdayfocusRTLover div span,
+.ms-cal-wtopdayfocusRTLLover div span,.ms-cal-wtopdayfocusover div span,.ms-cal-wtopdayfocusLover div span{
+font-weight:normal;
+padding:0px 10px 0px 10px;
+color:#000000;
+}
+.ms-cal-wtopdayL div a,.ms-cal-wtopday div a,.ms-cal-wtopdayRTL div a,.ms-cal-wtopdayRTLL div a,.ms-cal-wtopdayfocus div a,.ms-cal-wtopdayfocusL div a,.ms-cal-wtopdayfocusRTLL div a,.ms-cal-wtopdayfocusRTL div a{
+color:#000000;
+}
+.ms-cal-topday-today,.ms-cal-wtopday-today,.ms-cal-topday-todayRTL,.ms-cal-wtopday-todayRTL{
+background-image:url("/_layouts/images/calnumBttntoday.gif");
+background-repeat:repeat-x;
+background-color:#ffda8a;
+border:solid 1px #6f9dd9;
+}
+.ms-cal-topday-today,.ms-cal-wtopday-today{
+text-align:left;
+}
+.ms-cal-topday-todayRTL,.ms-cal-wtopday-todayRTL{
+text-align:right;
+}
+.ms-cal-topday-today div,.ms-cal-wtopday-today div,.ms-cal-topday-todayover div,.ms-cal-wtopday-todayover div,.ms-cal-topday-todayRTL div,.ms-cal-wtopday-todayRTL div,.ms-cal-topday-todayoverRTL div,.ms-cal-wtopday-todayRTLover div{
+padding:0px 0px 0px 4px;
+border:solid 1px #ffa521;
+font-weight:bold;
+}
+.ms-cal-topday-todayover,.ms-cal-wtopday-todayover{
+background-color:#ffe1bb;
+border:solid 1px #83b0ec;
+cursor:pointer;
+text-align:left;
+}
+.ms-cal-topday-todayoverRTL,.ms-cal-wtopday-todayRTLover{
+background-color:#ffe1bb;
+border:solid 1px #83b0ec;
+cursor:pointer;
+text-align:right;
+}
+.ms-cal-topdayover,.ms-cal-topdayoverL,.ms-cal-wtopdayover,.ms-cal-wtopdayLover,
+.ms-cal-topdayfocusover,.ms-cal-wtopdayfocusover,.ms-cal-wtopdayfocusLover
+{
+background-image:url("/_layouts/images/calnumBttnover.gif");
+background-color:#ebf3ff;
+border:solid 1px #6f9dd9;
+cursor:pointer;
+text-align:left;
+}
+.ms-cal-topdayoverRTL,.ms-cal-topdayoverRTLL,.ms-cal-topdayfocusoverRTL,.ms-cal-topdayfocusoverRTLL,
+.ms-cal-wtopdayRTLover,.ms-cal-wtopdayRTLLover,.ms-cal-wtopdayfocusRTLover,.ms-cal-wtopdayfocusRTLLover{
+background-color:#ebf3ff;
+border:solid 1px #6f9dd9;
+cursor:pointer;
+text-align:right;
+}
+.ms-cal-topdayover div,.ms-cal-topdayoverL div,.ms-cal-topdayoverRTL div,.ms-cal-topdayoverRTLL div,
+.ms-cal-wtopdayover div,.ms-cal-wtopdayLover div,.ms-cal-wtopdayRTLover div,.ms-cal-wtopdayRTLLover div,
+.ms-cal-topdayfocusover div,.ms-cal-topdayfocusRTLover div,.ms-cal-wtopdayfocusover div,.ms-cal-wtopdayfocusLover div,
+.ms-cal-wtopdayfocusRTLover div,.ms-cal-wtopdayfocusRTLLover div{
+padding:1px 1px 2px 5px;
+font-weight:bold;
+color:#000000;
+text-decoration:underline;
+}
+.ms-cal-topdayfocus,.ms-cal-topdayfocusL,.ms-cal-topdayfocusRTL,.ms-cal-topdayfocusRTLL,.ms-cal-wtopdayfocus,.ms-cal-wtopdayfocusL,.ms-cal-wtopdayfocusRTL,.ms-cal-wtopdayfocusRTLL{
+background-image:url("/_layouts/images/selectednav.gif");
+background-repeat:repeat-x;
+background-color:#ffda8a;
+border:solid 1px #6f9dd9;
+}
+.ms-cal-wtopdayfocus,.ms-cal-wtopdayfocusL{
+text-align:left;
+}
+.ms-cal-wtopdayfocusRTL,.ms-cal-wtopdayfocusRTLL{
+text-align:right;
+}
+.ms-cal-topdayfocus div,.ms-cal-topdayfocusL div,.ms-cal-topdayfocusRTL div,.ms-cal-topdayfocusRTLL div,.ms-cal-wtopdayfocus div,.ms-cal-wtopdayfocusL div,.ms-cal-wtopdayfocusRTL div,.ms-cal-wtopdayfocusRTLL div,{
+padding:1px 1px 2px 5px;
+font-weight:bold;
+}
+.ms-cal-topdayfocus div a,.ms-cal-topdayfocusL div a,.ms-cal-topdayfocusRTL div a,.ms-cal-topdayfocusRTLL div a,.ms-cal-wtopdayfocus div a,.ms-cal-wtopdayfocusL div a,.ms-cal-wtopdayfocusRTL div a,.ms-cal-wtopdayfocusRTLL div a{
+color:#000000;
+}
+.ms-cal-wtopday div img,.ms-cal-wtopdayL div img,.ms-cal-wtopdayLover div img,.ms-cal-wtopdayover div img,
+.ms-cal-wtopdayRTL div img,.ms-cal-wtopdayRTLL div img,.ms-cal-wtopdayRTLover div img,.ms-cal-wtopdayRTLLover div img,
+.ms-cal-wtopdayfocusover div img,.ms-cal-wtopdayfocusLover div img,.ms-cal-wtopdayfocusRTLover div img,.ms-cal-wtopdayfocusRTLLover div img,
+.ms-cal-wtopday-todayRTLover div img,.ms-cal-wtopday-todayRTLLover div img,.ms-cal-wtopday-todayRTL div img,.ms-cal-wtopday-todayRTLL div img,
+.ms-cal-wtopdayfocusRTL div img,.ms-cal-wtopdayfocusRTLL div img,.ms-cal-wtopdayfocusL div img,.ms-cal-wtopdayfocus div img
+{
+width:96px;
+}
+.ms-cal-topday div a,.ms-cal-topday div a:active,.ms-cal-topday div a:link,.ms-cal-topday div a:visited,.ms-cal-topday div a:hover,
+.ms-cal-topdayL div a,.ms-cal-topdayL div a:active,.ms-cal-topdayL div a:link,.ms-cal-topdayL div a:visited,.ms-cal-topdayL div a:hover,
+.ms-cal-topdayRTL div a,.ms-cal-topdayRTL div a:active,.ms-cal-topdayRTL div a:link,.ms-cal-topdayRTL div a:visited,.ms-cal-topdayRTL div a:hover,
+.ms-cal-topdayRTLL div a,.ms-cal-topdayRTLL div a:active,.ms-cal-topdayRTLL div a:link,.ms-cal-topdayRTLL div a:visited,.ms-cal-topdayRTLL div a:hover,
+.ms-cal-topdayselectedRTLL div a,.ms-cal-topdayselectedRTLL div a:active,.ms-cal-topdayselectedRTLL div a:link,.ms-cal-topdayselectedR:TLL div a:visited,.ms-cal-topdayselectedRTLL div a:hover,
+.ms-cal-topdayselectedRTL div a,.ms-cal-topdayselectedRTL div a:active,.ms-cal-topdayselectedRTL div a:link,.ms-cal-topdayselectedRTL div a:visited,.ms-cal-topdayselectedRTL div a:hover,
+.ms-cal-topdayselectedL div a,ms-cal-topdayselectedL div a:active,ms-cal-topdayselectedL div a:link,.ms-cal-topdayselectedL div a:visited,.ms-cal-topdayselectedL div a:hover,
+.ms-cal-topdayselected div a,.ms-cal-topdayselected div a:active,.ms-cal-topdayselected div a:link,.ms-cal-topdayselected div a:visited,.ms-cal-topdayselected div a:hover,
+.ms-cal-topday-today div a,.ms-cal-wtopday-today div a,.ms-cal-topday-todayover div a,.ms-cal-wtopday-todayover div a,.ms-cal-topday-todayRTL div a,.ms-cal-wtopday-todayRTL div a,.ms-cal-topday-todayoverRTL div a,.ms-cal-wtopday-todayRTLover div a,
+.ms-cal-topdayover div a,.ms-cal-topdayoverL div a,.ms-cal-topdayoverRTL div a,.ms-cal-topdayoverRTLL div a,.ms-cal-wtopdayover div a,.ms-cal-wtopdayLover div a,.ms-cal-wtopdayRTLover div a,.ms-cal-wtopdayRTLLover div a,.ms-cal-topdayfocusover div a,.ms-cal-topdayfocusoverRTL div a,
+.ms-cal-topdayfocus div a,.ms-cal-topdayfocusL div a,.ms-cal-topdayfocusRTL div a,.ms-cal-topdayfocusRTLL div a,.ms-cal-wtopdayfocus div a,.ms-cal-wtopdayfocusL div a,.ms-cal-wtopdayfocusRTL div a,.ms-cal-wtopdayfocusRTLL div a
+{
+color:#000000;
+text-decoration:none;
+}
+.ms-cal-nodataMid td,.ms-cal-nodataLeft td,.ms-cal-nodataLeftBtm td,.ms-cal-nodataLeftBtmRTL td,.ms-cal-nodataLeftBtm2 td,.ms-cal-nodataLeftBtmRTL2 td,.ms-cal-nodataBtm td,.ms-cal-nodataBtm2 td{
+font-family:Tahoma;
+font-size:8pt;
+vertical-align:top;
+}
+.ms-cal-nodataMid,.ms-cal-nodataLeft,.ms-cal-nodataLeftRTL,.ms-cal-nodataLeftBtm,.ms-cal-nodataLeftBtmRTL,.ms-cal-nodataLeftBtm2,.ms-cal-nodataLeftBtmRTL2,.ms-cal-nodataBtm,.ms-cal-nodataBtm2{
+padding:1px 0px 1px 0px;
+border-left:1px solid #6f9dd9;
+border-right:1px solid #6f9dd9;
+background-color:#e3efff;
+vertical-align:top;
+}
+.ms-cal-nodataLeftBtm,.ms-cal-nodataLeftBtmRTL,.ms-cal-nodataLeftBtm2,.ms-cal-nodataLeftBtmRTL2,.ms-cal-nodataBtm,.ms-cal-nodataBtm2{
+border-bottom:1px solid #6f9dd9;
+}
+.ms-cal-muworkitem,.ms-cal-muworkitemL,.ms-cal-muworkitemR,.ms-cal-muworkitemRTL,.ms-cal-muworkitemRTLL{
+padding:1px 0 0 0;
+border-left:1px solid #6f9dd9;
+border-right:1px solid #6f9dd9;
+}
+.ms-cal-muworkitem td,.ms-cal-muworkitemL td,.ms-cal-muworkitemRTL td,.ms-cal-muworkitemRTLL td,.ms-cal-muworkitemR td,.ms-cal-todayitem td,.ms-cal-todayitemRTL td,.ms-cal-noworkitem td,.ms-cal-workitem td,.ms-cal-noworkitemRTL td{
+font-family:Tahoma;
+font-size:8pt;
+vertical-align:top;
+}
+.ms-cal-workitem,.ms-cal-todayitem,.ms-cal-todayitemRTL{
+padding:1px 0px 1px 0px;
+border-left:1px solid #6f9dd9;
+border-right:1px solid #6f9dd9;
+vertical-align:top;
+background-color:#ffffff;
+}
+.ms-cal-workitem2{
+padding:2px 5px 1px 5px;
+border-left:1px solid #83b0ec;
+border-right:1px solid #83b0ec;
+}
+.ms-cal-workitem2B,.ms-cal-workitemRTL2B,.ms-cal-todayitem2B,.ms-cal-todayitemRTL2B{
+padding:2px 5px 1px 5px;
+border-left:1px solid #6f9dd9;
+border-right:1px solid #6f9dd9;
+border-bottom:1px solid #6f9dd9;
+background-color:#ffffff;
+}
+.ms-cal-workitemL2{
+padding:2px 5px 1px 5px;
+border-left:3px solid #9ba3b5;
+border-right:1px solid #9ba3b5;
+background-color:#FFFFFF;
+}
+.ms-cal-workitemRTLL2{
+padding:2px 5px 1px 5px;
+border-left:1px solid #9ba3b5;
+border-right:3px solid #9ba3b5;
+background-color:#FFFFFF;
+}
+.ms-cal-workitemL2B{
+padding:2px 5px 1px 5px;
+border-left:3px solid #9ba3b5;
+border-right:1px solid #9ba3b5;
+border-bottom:3px solid #9ba3b5;
+background-color:#FFFFFF;
+}
+.ms-cal-workitemRTLL2B{
+padding:2px 5px 1px 5px;
+border-left:1px solid #9ba3b5;
+border-right:3px solid #9ba3b5;
+border-bottom:3px solid #9ba3b5;
+background-color:#FFFFFF;
+}
+.ms-cal-noworkitem,.ms-cal-noworkitemL,.ms-cal-noworkitemRTL{
+padding:1px 0px 1px 0px;
+border-left:1px solid #6f9dd9;
+border-right:1px solid #6f9dd9;
+vertical-align:top;
+background-color:#ffffff;
+}
+.ms-cal-noworkitemB,.ms-cal-noworkitemLB,.ms-cal-noworkitem2B,.ms-cal-noworkitemL2B,.ms-cal-noworkitemRTL2B{
+padding:2px 5px 1px 5px;
+border-left:1px solid #6f9dd9;
+border-right:1px solid #6f9dd9;
+border-bottom:1px solid #83b0ec;
+background-color:#ffffff;
+}
+.ms-cal-monthitem{
+font-size:8pt;
+font-weight:bold;
+color:#000000;
+text-decoration:none;
+padding-left:5px;
+padding-right:5px;
+}
+td.ms-cal-monthitem a{
+color:#003399;
+}
+td.ms-cal-monthitem a:hover b{
+color:#000000;
+}
+.ms-cal-monthitem b{
+font-weight:normal;
+color:#8c8c8c;
+}
+.ms-cal-monthMultiDay,.ms-cal-monthMultiDay a,.ms-cal-monthMultiDay a:link,.ms-cal-monthMultiDay a:active,.ms-cal-monthMultiDay a:visited{
+padding:3px;
+font-family:Verdana;
+font-size:7pt;
+background-color:#375b84;
+color:#FFFFFF;
+text-decoration:none;
+text-overflow:ellipsis;
+}
+.ms-cal-monthMultiDay a:hover{
+font-family:Verdana;
+font-size:7pt;
+background-color:#375b84;
+color:#5185c1;
+text-decoration:none;
+text-overflow:ellipsis;
+}
+a.ms-cal-more,a.ms-cal-more:link,a.ms-cal-more:active,a.ms-cal-more:visited{
+padding:3px;
+font-family:Tahoma;
+font-size:8pt;
+font-weight:bold;
+color:#003399;
+text-decoration:none;
+text-overflow:ellipsis;
+margin-top:3;
+margin-bottom:3
+}
+a.ms-cal-more:hover{
+color:#000000;
+text-decoration:underline;_LCssTDec(CalMoreHoverDec)
+}
+.ms-cal-more img{
+vertical-align:middle;
+}
+.ms-cal-defaultbgcolor{
+background-image:url("/_layouts/images/alldayDefault.gif");
+background-repeat:repeat-x;
+background-color:#e3efff;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:4px 0px 4px 0px;
+cursor:pointer;
+}
+.ms-cal-defaultbgcolorsel{
+background-image:url("/_layouts/images/alldayDefaultOver.gif");
+background-repeat:repeat-x;
+background-color:#f2f8ff;
+font-weight:bold;
+text-align:center;
+text-overflow:ellipsis;
+padding:4px 0px 4px 0px;
+text-decoration:none;
+cursor:pointer;
+}
+.ms-cal-monthAllDay{
+background-image:url("/_layouts/images/alldayDefault.gif");
+background-repeat:repeat-x;
+background-color:#e3efff;
+border:solid 1px #8ebbf5;
+border-left:solid 2px #8ebbf5;
+border-right:solid 2px #8ebbf5;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:4px 0px 4px 0px;
+cursor:pointer;
+}
+td.ms-cal-defaultbgcolor a,td.ms-cal-monthAllDay a{
+color:#003399;
+text-decoration:none;
+}
+td.ms-cal-monthAllDaysel a,td.ms-cal-defaultbgcolorsel a{
+color:#000000;
+}
+.ms-cal-defaultbgcolor a:hover,.ms-cal-defaultbgcolorsel a:hover{
+color:#000000;
+text-decoration:underline;
+}
+.ms-cal-monthAllDaysel{
+background-image:url("/_layouts/images/alldayDefaultOver.gif");
+background-repeat:repeat-x;
+background-color:#f2f8ff;
+border:solid 1px #83b0ec;
+border-left:solid 2px #83b0ec;
+border-right:solid 2px #83b0ec;
+text-align:center;
+font-weight:bold;
+text-overflow:ellipsis;
+padding:4px 0px 4px 0px;
+cursor:pointer;
+}
+.ms-cal-time{
+border-right:1px solid #6f9dd9;
+width:18px;
+background-color:#e3efff;
+}
+.ms-cal-timeRTL{
+border-left:1px solid #6f9dd9;
+width:18px;
+background-color:#e3efff;
+}
+.ms-cal-alldayevent{
+text-align:center;
+border-left:1px solid #9ba3b5;
+border-right:1px solid #9ba3b5;
+padding-top:1px;
+height:100%;
+vertical-align:top;
+text-overflow:ellipsis;
+text-decoration:none;
+}
+.ms-cal-alldayeventRTL{
+border-left:1px solid #9ba3b5;
+border-right:3px solid #9ba3b5;
+padding-top:1px;
+background-color:#FFFFFF;
+height:100%;
+vertical-align:top;
+text-overflow:ellipsis;
+text-decoration:none;
+}
+.ms-cal-noworkhour{
+border-left:2px solid #9ba3b5;
+background-color:#f2f4f7;
+width:18px;
+}
+.ms-cal-blankimage{
+visibility:hidden;
+width:7px;
+height:76px;
+}
+.ms-cal-workhour,.ms-cal-workhourhalfhour,
+.ms-cal-workhourover,.ms-cal-workhourhalfhourover{
+background-color:#e3efff;
+text-align:right;
+width:30px;
+color:#003399;
+padding:1px 4px 0px 0px;
+white-space:nowrap;
+vertical-align:top;
+}
+.ms-cal-workhourB,.ms-cal-workhourBhalfhour,
+.ms-cal-workhourBover,.ms-cal-workhourBhalfhourover{
+border-bottom:solid 1px #add1ff;
+background-color:#e3efff;
+text-align:right;
+width:30px;
+color:#003399;
+padding:1px 4px 0px 0px;
+white-space:nowrap;
+vertical-align:top;
+}
+.ms-cal-noworkhourRTL{
+border-right:2px solid #9ba3b5;
+background-color:#f2f4f7;
+width:18px;
+}
+.ms-cal-workhourRTL,.ms-cal-workhourRTLhalfhour,
+.ms-cal-workhourRTLover,.ms-cal-workhourRTLhalfhourover{
+background-color:#e3efff;
+text-align:left;
+width:30px;
+color:#003399;
+padding:0px 0px 4px 1px;
+white-space:nowrap;
+vertical-align:top;
+}
+.ms-cal-workhourRTLB,.ms-cal-workhourRTLBhalfhour,
+.ms-cal-workhourRTLBover,.ms-cal-workhourRTLBhalfhourover{
+border-bottom:solid 1px #add1ff;
+background-color:#e3efff;
+text-align:left;
+width:30px;
+color:#003399;
+padding:0px 0px 4px 1px;
+white-space:nowrap;
+vertical-align:top;
+}
+.ms-cal-noworkhourF{
+border-top:3px solid #9ba3b5;
+border-left:2px solid #9ba3b5;
+background-color:#f2f4f7;
+width:18px;
+}
+.ms-cal-workhourF,.ms-cal-workhourFover,
+.ms-cal-workhourFhalfhour,.ms-cal-workhourFhalfhourover{
+background-color:#e3efff;
+text-align:right;
+width:30px;
+color:#003399;
+padding:2px 4px 0px 0px;
+white-space:nowrap;
+vertical-align:top;
+font-weight:normal;
+}
+.ms-cal-noworkhourRTLF{
+border-top:3px solid #9ba3b5;
+border-right:2px solid #9ba3b5;
+background-color:#f2f4f7;
+width:18px;
+}
+.ms-cal-workhourRTLF,.ms-cal-workhourRTLFover,
+.ms-cal-workhourRTLFhalfhour,.ms-cal-workhourRTLFhalfhourover{
+background-color:#e3efff;
+text-align:left;
+width:30px;
+color:#003399;
+padding:0px 0px 4px 2px;
+white-space:nowrap;
+vertical-align:top;
+font-weight:normal;
+}
+.ms-cal-upper-border{
+border-top:3px solid #9ba3b5;
+border-right:1px solid #9ba3b5;
+}
+.ms-cal-upper-borderRTL{
+border-top:3px solid #9ba3b5;
+border-left:1px solid #9ba3b5;
+}
+.ms-cal-workhourFover,.ms-cal-workhourRTLFover,.ms-cal-workhourover,
+.ms-cal-workhourBover,.ms-cal-workhourRTLover,.ms-cal-workhourRTLBover{
+text-decoration:underline;
+cursor:pointer;
+}
+.ms-cal-workhourFhalfhourover,.ms-cal-workhourRTLFhalfhourover,
+.ms-cal-workhourhalfhourover,.ms-cal-workhourBhalfhourover,
+.ms-cal-workhourRTLhalfhourover,.ms-cal-workhourRTLBhalfhourover{
+cursor:pointer;
+}
+.ms-cal-enoworkdayF,.ms-cal-enoworkdayRTLF{
+border-top:solid 1px #add1ff;
+}
+.ms-cal-eworkdayF,.ms-cal-eworkdayRTLF{
+border-top:solid 1px #add1ff;
+}
+.ms-cal-workhourF,.ms-cal-workhourRTL,.ms-cal-workhourRTLF,.ms-cal-workhourFover,
+.ms-cal-workhourRTLFover,.ms-cal-workhour,.ms-cal-workhourB,.ms-cal-workhourFover,
+.ms-cal-workhourRTLFover,.ms-cal-workhourover,.ms-cal-workhourBover,.ms-cal-workhourRTLover,
+.ms-cal-workhourRTLBover{
+border-top:1px solid #add1ff;
+}
+.ms-cal-enoworkhour,.ms-cal-enoworkhourF,.ms-cal-enoworkhourRTL,.ms-cal-enoworkhourRTLF{
+border-top:none;
+}
+.ms-cal-eworkhourF .ms-cal-dayhour,.ms-cal-eworkhourF .ms-cal-dayhourF,.ms-cal-eworkhour .ms-cal-dayhourF,.ms-cal-eworkhour .ms-cal-dayhour,.ms-cal-eworkday .ms-cal-dayhour,.ms-cal-enoworkday .ms-cal-dayhour,.ms-cal-eworkday .ms-cal-dayhourF,.ms-cal-enoworkday .ms-cal-dayhourF,.ms-cal-enoworkhourF .ms-cal-dayhour,.ms-cal-enoworkhourF .ms-cal-dayhourF,.ms-cal-enoworkhour .ms-cal-dayhour,.ms-cal-enoworkhour .ms-cal-dayhourF{
+border-top:solid 1px #add1ff;
+height:100%;
+}
+.ms-cal-eworkhourRTLF .ms-cal-dayhourRTL,.ms-cal-eworkhourRTLF .ms-cal-dayhourRTLF,.ms-cal-eworkhourRTL .ms-cal-dayhourRTLF,.ms-cal-eworkhourRTL .ms-cal-dayhourRTL,.ms-cal-eworkdayRTL .ms-cal-dayhourRTL,.ms-cal-enoworkdayRTL .ms-cal-dayhourRTL,.ms-cal-eworkdayRTL .ms-cal-dayhourRTLF,.ms-cal-enoworkdayRTL .ms-cal-dayhourRTLF,.ms-cal-enoworkhourRTL .ms-cal-dayhourRTLF,.ms-cal-enoworkhourRTL .ms-cal-dayhourRTL,.ms-cal-enoworkhourRTLF .ms-cal-dayhourRTLF,.ms-cal-enoworkhourRTLF .ms-cal-dayhourRTL{
+border-top:solid 1px #add1ff;
+height:100%;
+}
+.ms-cal-eworkhourF .ms-cal-dayhalfhourF,.ms-cal-eworkhour .ms-cal-dayhalfhourF,.ms-cal-eworkhour .ms-cal-dayhalfhour,.ms-cal-eworkday .ms-cal-dayhalfhour,.ms-cal-enoworkday .ms-cal-dayhalfhour,.ms-cal-eworkday .ms-cal-dayhalfhourF,.ms-cal-enoworkday .ms-cal-dayhalfhourF,.ms-cal-enoworkhour .ms-cal-dayhalfhour,.ms-cal-enoworkhour .ms-cal-dayhalfhourF{
+border-top:solid 1px #d6e8ff;
+height:100%;
+}
+.ms-cal-eworkhourRTLF .ms-cal-dayhalfhourRTLF,.ms-cal-eworkhourRTL .ms-cal-dayhalfhourRTLF,
+.ms-cal-eworkhourRTL .ms-cal-dayhalfhourRTL,.ms-cal-eworkdayRTL .ms-cal-dayhalfhourRTL,
+.ms-cal-enoworkdayRTL .ms-cal-dayhalfhourRTL,.ms-cal-eworkdayRTL .ms-cal-dayhalfhourRTLF,
+.ms-cal-enoworkdayRTL .ms-cal-dayhalfhourRTLF,.ms-cal-enoworkhourRTL .ms-cal-dayhalfhourRTLF,
+.ms-cal-enoworkhourRTLF .ms-cal-dayhalfhourRTLF,.ms-cal-enoworkhourRTL .ms-cal-dayhalfhourRTL,
+.ms-cal-workhourhalfhour,.ms-cal-workhourhalfhourB,.ms-cal-workhourRTLhalfhour,
+.ms-cal-workhourRTLBhalfhourover,.ms-cal-workhourRTLhalfhourover,
+.ms-cal-workhourBhalfhourover,.ms-cal-workhourBhalfhourover,
+.ms-cal-workhourhalfhourover,.ms-cal-workhourRTLFhalfhourover,
+.ms-cal-workhourFhalfhourover{
+border-top:solid 1px #d6e8ff;
+height:100%;
+}
+.ms-cal-enoworkhourB .ms-cal-dayhalfhour,
+.ms-cal-enoworkhourB .ms-cal-dayhour{
+border-top:solid 1px #d6e8ff;
+border-bottom:solid 1px #add1ff;
+height:100%;
+background-color:#e3efff;
+}
+.ms-cal-enoworkhourB .ms-cal-dayhalfhourF,
+.ms-cal-enoworkhourB .ms-cal-dayhourF{
+border-top:solid 1px #d6e8ff;
+border-bottom:solid 1px #add1ff;
+height:100%;
+background-color:#e3efff;
+border-left:solid 1px #6f9dd9;
+}
+.ms-cal-enoworkhourF .ms-cal-dayhour,
+.ms-cal-enoworkhourRTL .ms-cal-dayhalfhourRTLF,
+.ms-cal-enoworkhourRTLF .ms-cal-dayhalfhourRTLF,
+.ms-cal-enoworkhourRTL .ms-cal-dayhalfhourRTL,
+.ms-cal-enoworkhourRTL .ms-cal-dayhourRTLF,
+.ms-cal-enoworkhourRTL .ms-cal-dayhourRTL,
+.ms-cal-enoworkhourRTLF .ms-cal-dayhourRTLF,
+.ms-cal-enoworkhourRTLF .ms-cal-dayhourRTL,
+.ms-cal-enoworkhour .ms-cal-dayhalfhourF,
+.ms-cal-enoworkhour .ms-cal-dayhalfhour,
+.ms-cal-enoworkhour .ms-cal-dayhourF,
+.ms-cal-enoworkhour .ms-cal-dayhour
+.ms-cal-enoworkhourF .ms-cal-dayhourF,
+.ms-cal-enoworkhour,
+.ms-cal-enoworkhourRTL,
+.ms-cal-enoworkhourRTLL,
+.ms-cal-enoworkhourL,
+.ms-cal-enoworkhourF,
+.ms-cal-enoworkhourRTLF{
+background-color:#e3efff;
+}
+.ms-cal-enoworkhourRTLB .ms-cal-dayhalfhourRTLF,
+.ms-cal-enoworkhourRTLB .ms-cal-dayhourRTLF
+{
+border-top:solid 1px #d6e8ff;
+border-bottom:solid 1px #add1ff;
+height:100%;
+background-color:#e3efff;
+border-right:solid 1px #6f9dd9;
+}
+.ms-cal-enoworkhourRTLB .ms-cal-dayhalfhourRTL,
+.ms-cal-enoworkhourRTLB .ms-cal-dayhourRTL
+{
+border-top:solid 1px #d6e8ff;
+border-bottom:solid 1px #add1ff;
+height:100%;
+background-color:#e3efff;
+}
+.ms-cal-eworkhourF .ms-cal-dayhourF,.ms-cal-eworkday .ms-cal-dayhourF,
+.ms-cal-enoworkday .ms-cal-dayhourF,.ms-cal-enoworkdayF .ms-cal-dayhourF,
+.ms-cal-eworkday .ms-cal-dayhalfhourF,.ms-cal-enoworkday .ms-cal-dayhalfhourF,
+.ms-cal-enoworkdayF .ms-cal-dayhalfhourF,.ms-cal-eworkdayF .ms-cal-dayhourF,
+.ms-cal-eworkhour .ms-cal-dayhourF,.ms-cal-eworkhour .ms-cal-dayhalfhourF{
+border-left:solid 1px #6f9dd9;
+height:100%;
+}
+.ms-cal-eworkhourRTLF .ms-cal-dayhourRTLF,.ms-cal-eworkdayRTL .ms-cal-dayhourRTLF,
+.ms-cal-enoworkhourRTLF .ms-cal-dayhalfhourRTLF,.ms-cal-enoworkdayRTL .ms-cal-dayhourRTLF,
+.ms-cal-enoworkdayRTLF .ms-cal-dayhourRTLF,.ms-cal-enoworkdayRTLF .ms-cal-dayhourRTLF,
+.ms-cal-eworkdayRTL .ms-cal-dayhalfhourRTLF,.ms-cal-enoworkdayRTL .ms-cal-dayhalfhourRTLF,
+.ms-cal-enoworkdayRTLF .ms-cal-dayhalfhourRTLF,.ms-cal-eworkdayRTLF .ms-cal-dayhourRTLF,
+.ms-cal-eworkhourRTL .ms-cal-dayhourRTLF,.ms-cal-eworkhourRTL .ms-cal-dayhalfhourRTLF{
+border-right:solid 1px #6f9dd9;
+height:100%;
+}
+.ms-cal-enoworkhourF .ms-cal-dayhourF,.ms-cal-enoworkhour .ms-cal-dayhalfhourF,.ms-cal-enoworkhour .ms-cal-dayhourF{
+border-left:solid 1px #6f9dd9;
+height:100%;
+}
+.ms-cal-enoworkhourRTLF .ms-cal-dayhourRTLF,.ms-cal-enoworkhourRTL .ms-cal-dayhalfhourRTLF,.ms-cal-enoworkhourRTL .ms-cal-dayhourRTLF{
+border-right:solid 1px #6f9dd9;
+height:100%;
+}
+.ms-cal-enoworkhour,.ms-cal-enoworkhourRTL,.ms-cal-enoworkhourRTLL,.ms-cal-enoworkhourL,.ms-cal-enoworkhourF,.ms-cal-enoworkhourRTLF,
+.ms-cal-enoworkhourB,.ms-cal-enoworkhourRTLB,.ms-cal-enoworkhourRTLLB,.ms-cal-enoworkhourLB,.ms-cal-enoworkhourFB,.ms-cal-enoworkhourRTLFB{
+height:100%;
+}
+.ms-cal-enoworkday,.ms-cal-enoworkdayRTL{
+height:100%;
+vertical-align:top;
+}
+.ms-cal-eworkday,.ms-cal-eworkdayRTL,.ms-cal-eworkhour,.ms-cal-eworkhourRTL{
+background-color:#FFFFFF;
+height:100%;
+vertical-align:top;
+}
+.ms-cal-eworkday .ms-cal-tdayitem td div{
+overflow:hidden;
+white-space:auto;
+}
+.ms-cal-enoworkdayF .ms-cal-dayhalfhourF,
+.ms-cal-enoworkday .ms-cal-dayhalfhourF,
+.ms-cal-enoworkday .ms-cal-dayhourF,
+.ms-cal-enoworkdayF .ms-cal-dayhourF,
+.ms-cal-enoworkdayRTL .ms-cal-dayhalfhourRTLF,
+.ms-cal-enoworkdayRTLF .ms-cal-dayhalfhourRTLF,
+.ms-cal-enoworkdayRTL .ms-cal-dayhourRTLF,
+.ms-cal-enoworkdayRTLF .ms-cal-dayhourRTLF,
+.ms-cal-enoworkday,
+.ms-cal-enoworkdayRTL,
+.ms-cal-enoworkdayF,
+.ms-cal-enoworkdayRTLF{
+background-color:#e3efff;
+}
+.ms-cal-weekedge{
+background-color:#e3efff;
+width:4px;
+font-size:2px;
+}
+.ms-cal-wemptycell,.ms-cal-wemptycellL{
+border-left:1px solid #6f9dd9;
+background-color:#c2dcff;
+}
+.ms-cal-walldayevent,.ms-cal-walldayeventL,.ms-cal-walldayeventRTL,.ms-cal-walldayeventRTLL{
+padding-top:1px;
+background-color:#c2dcff;
+}
+.ms-cal-walldayevent td,.ms-cal-walldayeventRTL td,.ms-cal-walldayeventL td,.ms-cal-walldayeventR td,.ms-cal-walldayeventRTLL td,.ms-cal-walldayeventRTLR td{
+font-family:Tahoma;
+font-size:8pt;
+}
+.ms-cal-alldayevent,.ms-cal-alldayeventL,.ms-cal-alldayeventRTL,.ms-cal-alldayeventRTLL{
+border-right:1px solid #6f9dd9;
+border-left:1px solid #6f9dd9;
+}
+.ms-cal-alldayevent td,.ms-cal-alldayeventRTL td,.ms-cal-alldayeventL td,.ms-cal-alldayeventR td,.ms-cal-alldayeventRTLL td,.ms-cal-alldayeventRTLR td{
+font-family:Tahoma;
+font-size:8pt;
+}
+.cont,.contR,.contB,.contL{
+border-bottom:solid 1px #8ebbf5;
+border-top:solid 1px #8ebbf5;
+width:100%;
+}
+.contB{
+border-left:solid 2px #8ebbf5;
+border-right:solid 2px #8ebbf5;
+}
+.contL{
+border-left:solid 2px #8ebbf5;
+}
+.contR{
+border-right:solid 2px #8ebbf5;
+}
+.ms-cal-weekitem,.ms-cal-weekitem a,.ms-cal-weekitem a:link,.ms-cal-weekitem a:active,.ms-cal-weekitem a:visited{
+font-family:Verdana;
+font-size:7pt;
+color:#000000;
+text-align:center;
+text-decoration:none;
+text-overflow:ellipsis;
+height:100%;
+}
+.ms-cal-weekitem a:hover{
+font-family:Verdana;
+font-size:7pt;
+color:#FFFFFF;
+text-align:center;
+text-decoration:none;
+text-overflow:ellipsis;
+height:100%;
+}
+.ms-cal-tweekitem{
+border:1px solid #83b0ec;
+background-image:url("/_layouts/images/alldayDefault.gif");
+background-repeat:repeat-x;
+background-color:#e3efff;
+width:100%;
+height:100%;
+}
+.ms-cal-tweekitem td{
+padding:0px 4px 1px 4px;
+vertical-align:top;
+font-family:tahoma;
+font-size:8pt;
+}
+.ms-cal-tweekitem td div{
+width:100%;
+height:100%;
+overflow:hidden;
+}
+.ms-cal-eworkday .ms-cal-tdayitem td div{
+overflow:hidden;
+white-space:auto;
+}
+.ms-cal-tdayitem{
+border:1px solid #83b0ec;
+background-image:url("/_layouts/images/alldayDefault.gif");
+background-repeat:repeat-x;
+background-color:#e3efff;
+width:100%;
+height:100%;
+}
+.ms-cal-tdayitem td{
+padding:0px 4px 1px 4px;
+vertical-align:top;
+font-family:tahoma;
+font-size:8pt;
+}
+.ms-cal-tdayitem td div{
+height:100%;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.ms-cal-eworkday .ms-cal-tdayitem td div{
+overflow:hidden;
+white-space:auto;
+}
+td.ms-cal-eworkday a.ms-cal-dayitem,td.ms-cal-enoworkhour a.ms-cal-dayitem,td.ms-cal-enoworkhourF a.ms-cal-dayitem,td.ms-cal-eworkhour a.ms-cal-dayitem,td.ms-cal-eworkhourF a.ms-cal-dayitem,td.ms-cal-enoworkday a.ms-cal-dayitem,td.ms-cal-enoworkhourB a.ms-cal-dayitem{
+color:#003399;
+text-decoration:none;
+}
+a.ms-cal-dayitem:hover{
+color:#000000;
+text-align:center;
+text-decoration:none;
+text-overflow:ellipsis;
+}
+a.ms-cal-dayitem:hover NOBR{
+color:#000000;
+}
+.ms-cal-dayitem NOBR{
+font-weight:normal;
+color:#8c8c8c;
+}
+.ms-cal-gempty{
+border-collapse:collapse;
+font-family:Tahoma,Verdana;
+font-size:8pt;
+cursor:default;
+}
+.ms-cal-navheader{
+font-family:Tahoma;
+font-size:10pt;
+color:#000000;
+font-weight:bold;
+padding:10px 10px 10px 10px;
+}
+.ms-cal-nav-buttonsltr{
+color:#83b0ec;
+text-align:right;
+font-size:10pt;
+padding:0px 15px 0px 0px;
+}
+.ms-cal-nav-buttonsRTL{
+color:#83b0ec;
+text-align:left;
+font-size:10pt;
+padding:0px 0px 0px 15px;
+}
+div.ms-cal-navheader a img{
+background-image:url("/_layouts/images/listheadergrad.gif");
+background-repeat:repeat-x;
+border:solid 1px #83b0ec;
+background-color:#ffffff;
+vertical-align:middle;
+}
+.ms-cal-hidden{
+display:none;
+}

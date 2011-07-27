@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CABannerSR.ascx.cs" Inherits="CA.SharePoint.WebControls.CABannerSR" %>
+<div style="text-align:center;"><div class="line"><h3>Store Recruitment</h3></div></div>

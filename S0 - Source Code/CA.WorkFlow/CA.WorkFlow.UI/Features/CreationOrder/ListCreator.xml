@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance
+    Id="CreationOrder"
+    Title="CreationOrder"
+    FeatureId="{d3148d4d-4c6b-41be-8aee-4ca587856cdb}"
+    Description=""
+    TemplateType="9003"
+    Url="Lists/CreationOrder"
+    OnQuickLaunch="TRUE"
+    >
+  </ListInstance>
+</Elements>

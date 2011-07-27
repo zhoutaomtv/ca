@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+   <ContentType
+      ID="0x0100C5645A562F236548B318C15302286758"
+      Name="CA Base List"
+      Description=""
+      ReadOnly="FALSE"
+      Hidden="FALSE"
+      Sealed="FALSE"
+      FeatureId="{7D1C90DA-307F-4411-9438-4DCDD4FC2DE4}"
+      Group="CA Content Types">
+   </ContentType>
+</Elements>

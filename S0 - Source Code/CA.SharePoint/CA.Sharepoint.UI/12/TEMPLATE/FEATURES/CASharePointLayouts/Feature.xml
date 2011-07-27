@@ -1,0 +1,6 @@
+<Feature Id="35EAF27F-7A74-49c6-8317-1D86AE81945E" Title="CA SharePoint 演示用的母版页和页面布局文件" Description="这是 CA SharePoint 开发指导实例站点演示用到母版页和页面布局文件。" Version="1.0.0.0" Scope="Web" Hidden="False" Creator="MCSSharePoint" DefaultResourceFile="core" xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ElementManifests>
+        <ElementManifest Location="elements.xml"/>
+	</ElementManifests>
+</Feature>
+

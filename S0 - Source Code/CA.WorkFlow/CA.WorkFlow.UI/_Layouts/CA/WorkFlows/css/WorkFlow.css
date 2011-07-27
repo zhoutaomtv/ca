@@ -1,0 +1,163 @@
+﻿@charset "utf-8";
+ .place {
+	width:300px;
+	float:left;
+	margin:5px 5px;
+	padding:5px 2px;
+	font-size: 14px;
+}
+  .place span a:link{
+	color: #2E517F;
+  }
+  .test_h2 {
+	font-family: Georgia,;
+	font-size: 2.3em;
+	font-style: italic;
+	color: #6C5948;
+	line-height:25px;
+	word-spacing: 0.4em;
+	white-space: normal;
+	text-indent: 30px;
+}
+.workflow_bj2{
+	background-image: url(../images/workflow_bj2.jpg);
+	background-repeat: no-repeat;
+	height: 1000px;
+	width: 930px;
+
+}
+.workflow_bj{
+	background-image: url(../images/workflow_bg.jpg);
+	background-repeat: no-repeat;
+	height: 1000px;
+	width: 930px;
+
+}
+.workflow_top_bg{
+	background-image: url(../images/workflow_top_bg.png);
+	background-repeat: no-repeat;
+	height: 108px;
+	width: 836px;
+	background-position: 0px 0px;
+}
+.workflow_mid_bg{
+	background-image: url(../images/workflow_mid_bg.png);
+	background-repeat: repeat-y;
+	width: 836px;
+}
+.workflow_foot_bg{
+	background-image: url(../images/workflow_foot_bg.png);
+	background-repeat: repeat-y;
+	width: 836px;
+	height: 82px;
+}
+.workflow_table{
+	border-top-width: 2px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #9E9E9E;
+	border-right-color: #9E9E9E;
+	border-bottom-color: #9E9E9E;
+	border-left-color: #9E9E9E;
+	margin-bottom: 3px;
+}
+.workflow_table TH{
+	height: 20px;
+	font-family: Georgia,;
+	font-size: 14px;
+	color: #000;
+	font-weight: normal;
+	line-height:18px;
+	white-space: normal;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #9E9E9E;
+	border-bottom-color: #9E9E9E;
+	text-align: center;
+}
+.workflow_table td{
+	height: 20px;
+	font-family: Georgia,;
+	font-size: 12px;
+	color: #0066CC;
+	font-weight: normal;
+	white-space: normal;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #9E9E9E;
+	border-bottom-color: #9E9E9E;
+	text-align: center;
+}
+
+.workflow_table h3{
+	width: 150px;
+	text-align: left;
+	display: block;
+	font-family: Georgia,;
+	font-size: 12px;
+	font-weight: normal;
+	float: left;
+
+}
+.workflow_table h4{	font-family: Georgia,;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	font-weight: normal;
+	color: #000000;
+
+}
+
+.workflower_table input{
+	width: 95%;
+}
+
+.workflow_table2{
+	margin-bottom: 3px;
+}
+.workflow_table2 TH{
+	height: 20px;
+	font-family: Georgia,;
+	font-size: 14px;
+	color: #000;
+	font-weight: normal;
+	line-height:18px;
+	white-space: normal;
+	text-align: left;
+}
+.workflow_table2 td{
+	height: 20px;
+	font-family: Georgia,;
+	font-size: 14px;
+	color: #0066CC;
+	font-weight: normal;
+	white-space: normal;
+	text-align: left;
+		line-height:18px;
+}
+.workflow_table .teshu{	color: #0066CC;}
+.note{
+	background-image: url(../images/test2.png);
+	background-repeat: no-repeat;
+	height: 208px;
+	width: 596px;
+}
+.note td{
+	padding-left: 70px;
+	padding-top: 58px;
+	padding-right: 60px;
+	font-family: Georgia,;
+	font-size: 11px;
+
+	line-height:18px;
+}

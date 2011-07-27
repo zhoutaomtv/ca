@@ -1,0 +1,16 @@
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o ocdexportlist -url http://toddy:9000/WorkFlowCenter -name "LeaveData" -dir "D:\Work\LeaveData"
+STSADM.EXE -o ocdexportlist -url http://toddy:9000/WorkFlowCenter -name "LeaveDownloads" -dir "D:\Work\LeaveDownloads"
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o installfeature -name LeaveReport
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o uninstallfeature -name LeaveReport
+
+Operation completed successfully.

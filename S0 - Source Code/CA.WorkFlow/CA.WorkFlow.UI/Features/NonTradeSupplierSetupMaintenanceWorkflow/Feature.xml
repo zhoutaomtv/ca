@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature  Id="{3292E8F8-3FA4-4128-868C-528D46C06FAB}"
+          Title="Non Trade Supplier Setup Maintenance Workflow"
+		  Description="Create list template and list for non trade supplier setup maintenance"
+          Scope="Web"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <!--<ElementManifest Location="SiteColumn.xml" />
+    <ElementManifest Location="BaseContentType.xml" />
+    <ElementManifest Location="ContentType.xml" />-->
+    <ElementManifest Location="ListTemplate.xml" />
+    <ElementManifest Location="ListCreator.xml" />
+  </ElementManifests>
+</Feature>

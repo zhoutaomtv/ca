@@ -1,0 +1,15 @@
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o ocdexportlist -url http://toddy:9000/WorkFlowCenter -name "CreationOrder" -dir "D:\Work\CreationOrder"
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o installfeature -name CreationOrder
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o uninstallfeature -name CreationOrder
+
+Operation completed successfully.

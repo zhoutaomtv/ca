@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate
+      FeatureId="{ef5dc053-00c8-49fd-abe0-1835950c4f7a}"
+      BaseType="0"
+      Category="Custom Lists"
+      Name="InternalOrderMaintenanceWorkflow"
+      DisplayName="Internal Order Maintenance Workflow"
+      Description=""
+      DisableAttachments="True"
+      DisallowContentTypes="False"
+      EnableModeration="False"
+      FolderCreation="False"
+      Hidden="False"
+      HiddenList="False"
+      OnQuickLaunch="True"
+      SecurityBits="11"
+      Sequence="500"
+      Type="9001"
+      VersioningEnabled="FALSE">
+  </ListTemplate>
+</Elements>

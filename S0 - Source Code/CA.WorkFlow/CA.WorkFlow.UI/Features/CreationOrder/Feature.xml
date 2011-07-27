@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature  Id="{d3148d4d-4c6b-41be-8aee-4ca587856cdb}"
+          Title="CreationOrder"
+		  Description="Create list template and list for CreationOrder"
+          Scope="Web"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ListTemplate.xml" />
+    <ElementManifest Location="ListCreator.xml" />
+  </ElementManifests>
+</Feature>

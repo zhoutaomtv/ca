@@ -1,0 +1,99 @@
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o ocdexportlist -url http://toddy:9000/WorkFlowCenter -name "EmailTemplate" -dir "D:\Work\EmailTemplate"
+STSADM.EXE -o ocdexportlist -url http://toddy:9000/WorkFlowCenter -name "Modules" -dir "D:\Work\Modules"
+STSADM.EXE -o ocdexportlist -url http://toddy:9000/WorkFlowCenter -name "Delegates" -dir "D:\Work\Delegates"
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o installfeature -name CommonList
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o uninstallfeature -name CommonList
+
+Operation completed successfully.
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------
+NonTradeSupplierSetupMaintenance
+
+Non Trade Supplier Setup & Maintenance Notification
+
+<html> 
+<body>Dear {0},<br /><br /> 
+The following Supplier Setup & Maintenance Application had been {1}. <br /> 
+<font color='blue'>Type: {2}</font><br />
+<font color='blue'>Vendor ID: {3}</font><br />
+<font color='blue'>Applicant: {4}</font><br />
+<font color='blue'>Approved by: {5}</font><br />
+<font color='blue'>Rejected by: {6}</font><br /> 
+
+<br/> 
+Please view the detailed information by <a href='{7}' target="_blank">clicking here</a>! 
+<br/> <br/> 
+-EWF System Account 
+
+</body> 
+</html>
+-------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+InternalOrderCreation
+
+Internal Order Creation Notification
+
+<html> 
+<body>Dear {0},<br /><br /> 
+The following Internal Order Creation Application had been {1}. <br /> 
+<font color='blue'>Internal Order Type: {2}</font><br /> 
+<font color='blue'>Internal Order ID: {3}</font><br /> 
+<font color='blue'>Applicant: {4}</font><br /> 
+<font color='blue'>Approved by: {5}</font><br /> 
+<font color='blue'>Rejected by: {6}</font><br /> 
+
+<br/> 
+Please view the detailed information by <a href='{7}' target="_blank">clicking here</a>! 
+<br/> <br/> 
+-EWF System Account 
+
+</body> 
+</html>
+-------------------------------------------------------------------------------------
+
+
+
+-------------------------------------------------------------------------------------
+InternalOrderMaintance
+
+Internal Order Maintance Notification
+
+<html> 
+<body>Dear {0},<br /><br /> 
+The following Internal Order Maintenance Application had been {1}. <br /> 
+<font color='blue'>Change Type: {2}</font><br />
+<font color='blue'>Internal Order ID: {3}</font><br />
+<font color='blue'>Applicant: {4}</font><br />
+<font color='blue'>Approved by: {5}</font><br />
+<font color='blue'>Rejected by: {6}</font><br /> 
+
+<br/> 
+Please view the detailed information by <a href='{7}' target="_blank">clicking here</a>! 
+<br/> <br/> 
+-EWF System Account 
+
+</body> 
+</html>
+-------------------------------------------------------------------------------------

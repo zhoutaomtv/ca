@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature  Id="{a5ba72e2-332f-46a2-b751-007a87e31dc2}"
+          Title="Leave Report"
+		  Description="Create list template and list for leave data and leave download"
+          Scope="Web"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ListTemplate.xml" />
+    <ElementManifest Location="ListCreator.xml" />
+  </ElementManifests>
+</Feature>

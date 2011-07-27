@@ -1,0 +1,446 @@
+﻿/*---------------------------------Style Reset Begin--------------------------*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+HTML
+{
+    height: 100%;
+}
+
+body, div.h2, div.h3, h1, h2, h3, h4, h5, h5, small, input, select, button, a, input.ms-long, textarea.ms-long, .ui-widget input.button
+{
+    font-family: "Segoe UI" , Arial, Sans-Serif;
+    font-size: 12px;
+}
+
+body
+{
+    background: #E3DEDA url('../images/homepage_bj.jpg') repeat-x left top;
+    line-height: 1;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a img
+{
+    border: none;
+}
+
+a, a:link, a:visited, a:hover, a:active
+{
+    text-decoration: none;
+}
+
+/*---------------------------------Style Reset End--------------------------*/
+
+/*---------------------------------Generic Style Begin--------------------------*/
+
+div.main-body
+{
+    width: 972px;
+    margin: 0 auto;
+}
+
+.inner-table
+{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.clr-red
+{
+    color: Red;
+}
+
+.float-left
+{
+    float: left;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.align-center
+{
+    text-align: center;
+}
+
+.align-center table
+{
+    margin: 0 auto;
+}
+
+.align-right
+{
+    text-align: right;
+}
+
+.w15
+{
+    width: 15%;
+}
+
+.w35
+{
+    width: 35%;
+}
+
+.w25
+{
+    width: 25%;
+}
+
+tr.hover, tr.selected
+{
+    background-color: yellow;
+}
+
+.ms-vb2, .ms-listheaderlabel, th.ms-vh2-gridview
+{
+    font-family: "Segoe UI" , Arial, Sans-Serif;
+    font-size: 12px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+tr.each-row td.ms-vb2, th.ms-vh2-gridview
+{
+    border-bottom: 1px solid #ccc;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.warning
+{
+    color: red;
+    padding: 3px;   
+}
+
+/*---------------------------------Generic Style End--------------------------*/
+
+/*---------------------------------Header Section Begin--------------------------*/
+.ca-header-section
+{
+    position: relative;
+    width: 950px;
+    height: 310px;
+    margin: 0 auto;
+    background: url('../images/test.png') no-repeat;
+}
+
+.ca-action-bar
+{
+    height: 40px;
+}
+
+.ca-action-bar a
+{
+    color: #fff;
+}
+
+.ca-search-bar
+{
+    height: 80px;
+}
+
+.ca-menu-bar
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+/*---------------------------------Header Section End--------------------------*/
+
+/*---------------------------------Quick Navigation Section Begin--------------------------*/
+
+.main-content
+{
+    background: transparent url('../images/bj2.gif') repeat-y;
+}
+
+.quick-nav-bar
+{
+    padding: 5px 0 5px 10px;
+}
+
+.QuickNavigation .top1
+{
+    width: 929px;
+    height: 38px;
+    background-image: url('../images/Quick%20Navigation.jpg');
+    background-repeat: no-repeat;
+    padding-left: 175px;
+}
+
+.QuickNavigation .top1 a:hover
+{
+    color: #4999CA;
+}
+
+.QuickNavigation .newsboldtxt
+{
+    float: left;
+    width: 135px;
+    height: 30px;
+    color: #489ACA;
+    vertical-align: middle;
+    line-height: 25px;
+    padding: 3px 0;
+    border-right: 1px dashed #b8b8b8;
+    margin-right: 5px;
+}
+
+.QuickNavigation .newsboldtxt a, .QuickNavigation .newsboldtxt a:link
+{
+    display: block;
+    width: 135px;
+    height: 30px;
+    color: #489ACA;
+    vertical-align: middle;
+    line-height: 25px;
+    margin-right: 5px;
+    background-image: url('../images/02_2.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.QuickNavigation .newsboldtxt a:visited
+{
+    color: #489ACA;
+}
+
+.QuickNavigation .newsboldtxt a:hover
+{
+    color: #000;
+    background-color: #D0FBE3;
+}
+
+.QuickNavigation .newsboldtxt p
+{
+    float: left;
+    font-size: 10px;
+    color: #fff;
+    padding-left: 1px;
+    padding-top: 2px;
+    margin-right: 2px;
+    font-weight: bold;
+}
+
+.QuickNavigation .newsboldtxt h1
+{
+    float: left;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-top: 4px;
+}
+
+.QuickNavigation .newsboldtxt02
+{
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/*---------------------------------Quick Navigation Section End--------------------------*/
+
+.ca-workflow-bg
+{
+    width: 930px;
+    margin: 0 auto;
+    background: transparent url('../images/workflow_bg.jpg') repeat-y;
+}
+
+.ca-workflow-templates-bg
+{
+    background: transparent url('../images/workflow_template_bg.png') no-repeat right bottom;
+}
+
+.ca-workflow-header
+{
+    height: 108px;
+    background: transparent url('../images/workflow_top_bg.png') no-repeat;
+}
+
+.ca-workflow-title
+{
+    margin-top: 40px;
+    font: italic normal normal 25px/25px Georgia;
+    color: #6C5948;
+    white-space: normal;
+    text-indent: 30px;
+}
+
+.ca-workflow-form-bg
+{
+    width: 100%;
+    background: url('../images/workflow_mid_bg.png') repeat-y;
+    padding-left: 20px;
+}
+
+.ca-workflow-form
+{
+    width: 680px;
+}
+
+.ca-workflow-footer
+{
+    height: 82px;
+    background: url('../images/workflow_foot_bg.png') repeat-y;
+}
+
+.ca-workflow-form-buttons
+{
+    text-align: right;
+}
+
+.ca-workflow-form-buttons input, .ca-workflow-form-buttons button, .ca-workflow-form-buttons input.button, .ca-workflow-form-table .form-button
+{
+    width: 120px;
+    height: 24px;
+    margin: 5px 0 10px 5px;
+    padding: 0 2px;
+    border: 1px solid #9DABB6;
+    cursor: pointer;
+    background: url('../images/button/btnout_bg_center.gif') repeat-x;
+    text-align: center;
+}
+
+.ca-workflow-form-table td.ms-attachUploadButtons
+{
+    text-align: center;
+}
+
+.ca-workflow-form-table .form-button
+{
+    width: 80px;
+    margin: 0 0 0 5px;
+}
+
+.ca-workflow-form-note
+{
+    width: 596px;
+    margin: 20px auto 0;
+    color: blue;
+}
+
+.ca-workflow-form-note .top
+{
+    background-image: url('../images/note_top_bg.png');
+    background-repeat: no-repeat;
+    height: 58px;
+}
+.ca-workflow-form-note .foot
+{
+    background-image: url('../images/note_foot_bg.png');
+    background-repeat: no-repeat;
+    height: 58px;
+}
+.ca-workflow-form-note .middle
+{
+    padding: 20px 60px 0;
+    font-family: Georgia;
+    line-height: 18px;
+    background-image: url('../images/note_mid_bg.png');
+    background-repeat: repeat-y;
+}
+
+.ca-workflow-form-table
+{
+    width: 680px;
+    border: 2px solid #9dabb6;
+    margin-bottom: 3px;
+}
+
+.ca-workflow-form-table .ms-formbody
+{
+    background-color: #fff;
+    border-top: none;
+}
+
+.ca-workflow-form-table td.label
+{
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+.ca-workflow-form-table td.value
+{
+    border-bottom: 1px solid #ccc;
+}
+
+.ca-workflow-form-table tr.last td, .ca-workflow-form-table td.last
+{
+    border-bottom: none;
+}
+
+.ca-workflow-form-table td.label, .ca-workflow-form-table td.value
+{
+    padding: 3px;
+}
+
+.ca-workflow-form-table input, .ca-workflow-form-table select, .ca-workflow-form-table textarea
+{
+    width: 90%;
+    margin-left: 3px;
+}
+
+.ca-workflow-form-table textarea
+{
+    border: 1px solid #ccc;
+}
+
+.ca-workflow-form-table input
+{
+    padding: 4px 2px 0;
+    color: #06C;
+    border: none;
+    border-bottom: 1px solid #999;
+    background-color: #fff;
+}
+
+.ca-workflow-form-table .ms-RadioText input
+{
+    border: none;
+    width: auto;
+}
+
+.ca-workflow-form-table .ms-dtinput input
+{
+    width: auto;
+}
+
+.ca-workflow-form-table input.focus, .ca-workflow-form-table textarea.focus
+{
+    background-color: #D0FBE3;
+}
+
+.hr-line {border-top: 2px dotted #999;}
+
+.trace-list-title
+{
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+.trace-list-grid table
+{
+    width: 100%;
+}
+
+.trace-list-grid table td
+{
+    border-bottom: 1px solid #ccc;
+}
+/*---------------------------------Main Content End--------------------------*/

@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#menu {
+font-family: verdana, sans-serif; 
+width:950px; 
+position:relative; 
+font-size:1.1em;
+
+}
+#menu {list-style-type:none; margin:0; padding:0;}
+#menu li {
+	float:left;
+	padding:0;
+	margin:0 1px 0 0;
+	position:relative;
+	width:150px;
+	height:30px;
+	color: #FFFFFF;
+
+}
+#menu li dl {position:absolute; top:5px; left:0;padding-bottom:0px;}
+#menu li a, #menu li a:visited {text-decoration:none;}
+#menu li dd {display:none;}
+#menu li a:hover {border:0;}
+#menu li:hover dd, #menu li a:hover dd {display:block;}
+#menu li:hover dl, #menu li a:hover dl {padding-bottom:0px;}
+#menu table {border-collapse:collapse; padding:0; margin:-1px; font-size:1em;}
+#menu dl {width: 150px; margin: 0; padding: 0; }
+#menu dt {margin:0; padding: 5px 5px 5px 20px; font-size: 1.1em; color: #fff;}
+
+
+#menu .one dt {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #8DCDA9;
+}
+#menu .two dt {
+	background-image: url(../images/down-arrow3.gif);
+	background-repeat: no-repeat;
+	background-position: 100px 6px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #8DCDA9;
+}
+
+#menu dd {margin:0; padding:0; color: #fff; font-size: 1em; text-align:left;}
+#menu .one dd {border-bottom:1px solid #326570;}
+#menu .two dd {
+	border-bottom:1px solid #79B1C5;
+		line-height:20px
+
+}
+
+#menu dd.last {border-bottom:1px solid #fff;}
+#menu dt a, #menu dt a:visited {
+	display:block;
+	color:#FFFFFF;
+	font-family: Verdana, Arial, "宋体";
+	font-size: 12px;
+}
+#menu dd a, #menu dd a:visited {
+	color:#fff;
+	text-decoration:none;
+	display:block;
+	padding:10px 0px 10px 20px;
+	width:130px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+	border-left-color: #000000;
+}
+#menu .one dd a {background:#949e7c; color:#fff;}
+#menu .two dd a {
+	color:#A5C8DD;
+	background-color: #2A616E;
+
+}
+
+#menu .one dd a:hover {background: #b2ab9b; color:#345;}
+#menu .two dd a:hover {
+	background: #278EB3;
+	color:#fff;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #000000;
+	border-left-color: #000000;
+}

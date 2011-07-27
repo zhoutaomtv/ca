@@ -1,0 +1,15 @@
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o ocdexportlist -url http://toddy:9000/WorkFlowCenter -name "Internal Order Maintenance Workflow" -dir "D:\Work\Internal Order Maintenance Workflow"
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o installfeature -name InternalOrderMaintenanceWorkflow
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o uninstallfeature -name InternalOrderMaintenanceWorkflow
+
+Operation completed successfully.

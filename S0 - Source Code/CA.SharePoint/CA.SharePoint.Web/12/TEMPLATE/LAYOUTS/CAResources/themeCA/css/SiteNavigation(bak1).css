@@ -1,0 +1,19 @@
+﻿.CANavigationDiv { width:220px; float:right; margin:0; padding:10px 30px;}
+.CANavigationDiv ul { list-style:none; padding:5px; margin:5px;}
+.CANavigationDiv li { background:url(../images/right_ul_li_bg.gif) left no-repeat; border-bottom:1px solid #cecece; padding:5px 15px; margin:0;}
+.CANavigationDiv li a { font: normal 11px Tahoma, Geneva, sans-serif; color:#2f2f2f; text-decoration:none;}
+.CANavigationDiv li a:hover { color:#35beff; text-decoration:underline;}
+.CANavigationDiv h2 {
+	color:#666666;
+	font:normal 16px  Arial, Helvetica, sans-serif;
+	background:url(../images/h2_bg.gif) left no-repeat;
+	text-indent:20px;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-left: 0;
+	padding-top: 5px;
+	padding-right: 0;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+.CANavigationDiv p { font: normal 11px Tahoma, Geneva, sans-serif; color:#6f6f6f; padding:1px; margin:0; line-height:1.8em;}

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A298162-DBE6-4907-A52C-7A5C0560E3B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CA.Web</RootNamespace>
+    <AssemblyName>CA.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>CA.Web.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/CA.Web/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\target\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientScreenAdapter.cs" />
+    <Compile Include="CloseButton.cs" />
+    <Compile Include="Common\ControlUtil.cs" />
+    <Compile Include="Common\Global.cs" />
+    <Compile Include="Common\JsEncoder.cs" />
+    <Compile Include="Common\ResourceHelper.cs" />
+    <Compile Include="Common\Script.cs" />
+    <Compile Include="Common\UIHelper.cs" />
+    <Compile Include="ComponentDesign\ComponentDesignControl.cs" />
+    <Compile Include="ComponentDesign\Editors.cs" />
+    <Compile Include="ComponentDesign\FieldEditorFactory.cs" />
+    <Compile Include="ComponentDesign\HierarchicalUIBuilder.cs" />
+    <Compile Include="ComponentDesign\IDesignerUIBuilder.cs" />
+    <Compile Include="ComponentDesign\IParseLayoutString.cs" />
+    <Compile Include="ComponentDesign\LayoutableUIBuilder.cs" />
+    <Compile Include="ComponentDesign\LayoutField.cs" />
+    <Compile Include="ComponentDesign\MetaData\Attributes.cs" />
+    <Compile Include="ComponentDesign\MetaData\ComponentMetaDataFactctory.cs" />
+    <Compile Include="ComponentDesign\MetaData\ComponentSet.cs" />
+    <Compile Include="ComponentDesign\MetaData\ContextTypeContainer.cs" />
+    <Compile Include="ComponentDesign\MetaData\IComponentDesigner.cs" />
+    <Compile Include="ComponentDesign\MetaData\IFiledEditor.cs" />
+    <Compile Include="ComponentDesign\MetaData\TestModel.cs" />
+    <Compile Include="DatePicker.cs" />
+    <Compile Include="Grid\GridView.cs" />
+    <Compile Include="ObjectMapper\ControlParameter.cs" />
+    <Compile Include="ObjectMapper\ErrorMessageShowMode.cs" />
+    <Compile Include="ObjectMapper\FormParameter .cs" />
+    <Compile Include="ObjectMapper\ObjectMapException.cs" />
+    <Compile Include="ObjectMapper\ObjectMapper.cs" />
+    <Compile Include="ObjectMapper\ObjectMapperDesigner.cs" />
+    <Compile Include="ObjectMapper\Parameter.cs" />
+    <Compile Include="ObjectMapper\ParameterListTypeEditor.cs" />
+    <Compile Include="ObjectMapper\QueryStringParameter.cs" />
+    <Compile Include="ObjectMapper\ValidationType.cs" />
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PagerControl\EventArgs.cs" />
+    <Compile Include="PagerControl\Pager.cs" />
+    <Compile Include="PagerControl\PagerDesigner.cs" />
+    <Compile Include="PagerControl\PagerMode.cs" />
+    <Compile Include="PagerControl\PagerTemplate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TimeControl\DatePicker.cs" />
+    <Compile Include="TimeControl\DateTimePicker.cs" />
+    <Compile Include="TimeControl\TimePicker.cs" />
+    <Compile Include="ToolbarControl\Toolbar.cs" />
+    <Compile Include="ToolbarControl\ToolItem.cs" />
+    <Compile Include="TreeControl\ITreeNodeConvertor.cs" />
+    <Compile Include="TreeControl\TreeDropDownList.cs" />
+    <Compile Include="TreeControl\TreeGraph.cs" />
+    <Compile Include="TreeControl\TreeGraphDesigner.cs" />
+    <Compile Include="TreeControl\TreeGraphHelpers\HorizontalRender.cs" />
+    <Compile Include="TreeControl\TreeGraphHelpers\TreeGraphRender.cs" />
+    <Compile Include="TreeControl\TreeGraphHelpers\VerticalRender.cs" />
+    <Compile Include="TreeControl\TreeNode.cs" />
+    <Compile Include="TreeControl\TreeNodeCollection.cs" />
+    <Compile Include="TreeControl\TreeView.cs" />
+    <Compile Include="TreeControl\TreeViewDesigner.cs" />
+    <Compile Include="UploadControl\MultiFileUpload.cs" />
+    <Compile Include="UploadControl\PostedFileCollection.cs" />
+    <Compile Include="UploadControl\PostedFileException.cs" />
+    <Compile Include="UploadControl\PostedFileInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DatePicker.js" />
+    <Content Include="ObjectMapper\ObjectMapper.js" />
+    <Content Include="ObjectMapper\WebUIValidation.js" />
+    <Content Include="PagerControl\readme.txt" />
+    <Content Include="Readme.txt" />
+    <Content Include="TimeControl\DatePicker.js" />
+    <Content Include="TimeControl\DateTimePicker.js" />
+    <Content Include="TreeControl\TreeView.js" />
+    <Content Include="UploadControl\MultiFileUpload.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CA.Web.snk" />
+    <None Include="ComponentDesign\ComponentDesign.cd" />
+    <None Include="GAC.cmd" />
+    <None Include="ObjectMapper\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

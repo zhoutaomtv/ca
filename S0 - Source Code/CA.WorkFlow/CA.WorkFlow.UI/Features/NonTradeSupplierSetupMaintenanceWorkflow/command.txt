@@ -1,0 +1,15 @@
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o ocdexportlist -url http://toddy:9000/WorkFlowCenter -name "Non Trade Supplier Setup Maintenance Workflow" -dir "D:\Work\Non Trade Supplier Setup Maintenance Workflow"
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o installfeature -name NonTradeSupplierSetupMaintenanceWorkflow
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o uninstallfeature -name NonTradeSupplierSetupMaintenanceWorkflow
+
+Operation completed successfully.

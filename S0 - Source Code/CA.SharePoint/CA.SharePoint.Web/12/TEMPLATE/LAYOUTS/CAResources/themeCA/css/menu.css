@@ -1,0 +1,60 @@
+@charset "utf-8";
+.droplinebar {
+	overflow: hidden;
+}
+.droplinebar ul {
+	margin: 0;
+	padding: 0;
+	float: left;
+	width: 950px;
+	height:30px;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif, AdiHaus;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.droplinebar ul li {
+	display: inline;
+}
+.droplinebar ul li a {
+	height:20px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #8dcda9;
+	float: left;
+	display: block;
+	color: #fff;
+	width: 127px;
+	text-decoration: none;
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+.droplinebar ul li a:visited {
+	color: white;
+}
+.droplinebar ul li a:hover, .droplinebar ul li .current { /*background of main menu bar links onMouseover*/
+	color: #fff;
+}
+/* Sub level menus*/
+.droplinebar ul li ul {
+	position: absolute;
+	z-index: 100;
+	padding-top: 8px;
+	margin: 0px;
+	background: #006791; /*sub menu background color */
+	visibility: hidden;
+	height:25px;
+	text-align: center;
+}
+/* Sub level menu links style */
+.droplinebar ul li ul li a {
+	font: 12px, Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin: 0px;
+}
+.droplinebar ul li ul li a:hover { /*sub menu links' background color onMouseover */
+
+}
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+    <ListTemplate 
+        Name="InfoPublish" 
+        Type="100005" 
+        BaseType="0" 
+        OnQuickLaunch="TRUE" 
+        SecurityBits="11" 
+        Sequence="320"
+        DisplayName="Information publish" 
+        Description="$Resources:core,announceList_Desc;" 
+        Image="/_layouts/images/itann.gif"/>
+ 
+<!--
+ <ContentType>
+<XmlDocuments>
+  <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+    <FormTemplates  xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+      <Display>MCS_FormTemplates</Display>
+      <Edit>MCS_FormTemplates</Edit>
+      <New>MCS_FormTemplates</New>
+    </FormTemplates>
+  </XmlDocument>
+</XmlDocuments>
+ </ContentType>
+ -->
+
+
+</Elements>

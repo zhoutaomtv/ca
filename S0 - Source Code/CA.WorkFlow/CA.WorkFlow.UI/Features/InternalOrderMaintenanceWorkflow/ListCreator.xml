@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance
+    Id="InternalOrderMaintenanceWorkflow"
+    Title="Internal Order Maintenance Workflow"
+    FeatureId="{ef5dc053-00c8-49fd-abe0-1835950c4f7a}"
+    Description=""
+    TemplateType="9001"
+    Url="Lists/InternalOrderMaintenanceWorkflow"
+    OnQuickLaunch="TRUE"
+    >
+  </ListInstance>
+</Elements>

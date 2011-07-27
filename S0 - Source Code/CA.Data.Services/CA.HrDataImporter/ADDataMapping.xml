@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+各字段说明
+==================
+Column：
+==================
+    Name: 数据表列名(必填)。名称必须同目标数据表的列名相同。
+    CanBeNull: 列值是否可为空(可省略)。默认为true。
+    DataFieldName: 外部数据源中的对应列名(可省略)。
+    PlaceHolder: 该列存在于数据表中，但CSV或AD中无对应列(可省略)。
+    DefaultValue: 列的默认值。对于DateTime类型，可以使用"now"指定默认值为当前时间。对于Guid，可以使用"new"指定默认值为new Guid();
+-->
+<DataTable>
+  <Column Name="EmployeeId" CanBeNull="true" DataFieldName= "info" />
+  <Column Name="SID" CanBeNull="false" DataFieldName= "objectSID" />
+  <Column Name="AccountName" CanBeNull="false" DataFieldName= "sAMAccountName" />
+  <Column Name="ADGuid" CanBeNull="false" DataFieldName= "objectGuid" />
+  <Column Name="LastName" CanBeNull="true" DataFieldName= "sn" />
+  <Column Name="FirstName" CanBeNull="true" DataFieldName= "givenName" />
+  <Column Name="PreferredName" CanBeNull="true" DataFieldName= "displayName" />
+  <Column Name="WorkPhone" CanBeNull="true" DataFieldName= "telephoneNumber" />
+  <Column Name="Office" CanBeNull="true" DataFieldName= "physicalDeliveryOfficeName" />
+  <Column Name="UserName" CanBeNull="false" DataFieldName= "samAccountName" />
+  <Column Name="WorkEmail" CanBeNull="true" DataFieldName= "mail" />
+  <Column Name="EmployeeNameEN" PlaceHolder="true"  />
+  <Column Name="EmployeeNameZH" PlaceHolder="true"   />
+  <Column Name="Title" PlaceHolder="true"   />
+  <Column Name="TitleZH" PlaceHolder="true"  />
+  <Column Name="Department" PlaceHolder="true"   />
+  <Column Name="DepartmentZH" PlaceHolder="true"   />
+  <Column Name="CellPhone" PlaceHolder="true"  />
+  <Column Name="ManagerId" PlaceHolder="true"  />
+  <Column Name="ApproveRight" PlaceHolder="true"  />
+  <Column Name="Manager" PlaceHolder="true"  />
+</DataTable>

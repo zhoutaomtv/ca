@@ -1,0 +1,13 @@
+<Feature  Id="82E7981F-63E0-42ea-8200-1E2FEC46EF0F"
+          Title="$Resources:ca,Document_Size_Limit_Title;"
+          Description="$Resources:ca,Document_Size_Limit_Feature_Des;"      
+          Scope="Site"
+          Hidden="FALSE"
+          DefaultResourceFile="ca"
+          xmlns="http://schemas.microsoft.com/sharepoint/" 
+>
+	<ElementManifests>
+		<ElementManifest Location="Elements.xml"/>
+	</ElementManifests>
+	
+</Feature>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListTemplateId="101">
+    <Receiver>
+      <Name>MyEventHandlers</Name>
+      <Type>ItemAdded</Type>
+      <SequenceNumber>10000</SequenceNumber>
+      <Assembly>CA.SharePoint.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=440465db37615a38</Assembly>
+      <Class>CA.SharePoint.Utilities.EHUploadDocument</Class>
+      <Data></Data>
+      <Filter></Filter>
+    </Receiver>
+  </Receivers>
+  <Receivers ListTemplateId="109">
+    <Receiver>
+      <Name>MyEventHandlers</Name>
+      <Type>ItemAdded</Type>
+      <SequenceNumber>10000</SequenceNumber>
+      <Assembly>CA.SharePoint.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=440465db37615a38</Assembly>
+      <Class>CA.SharePoint.Utilities.EHUploadDocument</Class>
+      <Data></Data>
+      <Filter></Filter>
+    </Receiver>
+  </Receivers>
+</Elements>

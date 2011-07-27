@@ -1,0 +1,11 @@
+<Feature Id="{D1C5C7FA-35EF-46a4-A419-9F4A5280253C}"
+    Title="Profile Redirection"
+    Description="When a user navigates to their User Profile they are redirected to a custom page"
+    Version="12.0.0.0"
+    Scope="Farm"
+    Hidden="false"
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ElementManifests>
+        <ElementManifest Location="Elements.xml"/>
+    </ElementManifests>
+</Feature>

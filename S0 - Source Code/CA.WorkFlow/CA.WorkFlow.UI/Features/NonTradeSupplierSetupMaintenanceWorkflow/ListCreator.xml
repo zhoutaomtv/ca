@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance
+    Id="NonTradeSupplierSetupMaintenanceWorkflow"
+    Title="Non Trade Supplier Setup Maintenance Workflow"
+    FeatureId="{3292E8F8-3FA4-4128-868C-528D46C06FAB}"
+    Description=""
+    TemplateType="9000"
+    Url="Lists/NonTradeSupplierSetupMaintenanceWorkflow"
+    OnQuickLaunch="TRUE"
+    >
+  </ListInstance>
+</Elements>

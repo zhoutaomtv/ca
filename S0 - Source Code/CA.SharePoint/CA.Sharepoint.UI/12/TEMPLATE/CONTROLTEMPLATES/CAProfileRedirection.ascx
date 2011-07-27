@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" Inherits="CA.SharePoint.Utilities.ProfileRedirectControl, CA.SharePoint.Utilities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=440465db37615a38" %>

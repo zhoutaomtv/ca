@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate
+      FeatureId="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+      BaseType="0"
+      Category="Custom Lists"
+      Name="EmailTemplate"
+      DisplayName="EmailTemplate"
+      Description=""
+      DisableAttachments="True"
+      DisallowContentTypes="False"
+      EnableModeration="False"
+      FolderCreation="False"
+      Hidden="False"
+      HiddenList="False"
+      OnQuickLaunch="True"
+      SecurityBits="11"
+      Sequence="500"
+      Type="9004"
+      VersioningEnabled="FALSE">
+  </ListTemplate>
+  <ListTemplate
+      FeatureId="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+      BaseType="0"
+      Category="Custom Lists"
+      Name="Modules"
+      DisplayName="Modules"
+      Description=""
+      DisableAttachments="True"
+      DisallowContentTypes="False"
+      EnableModeration="False"
+      FolderCreation="False"
+      Hidden="False"
+      HiddenList="False"
+      OnQuickLaunch="True"
+      SecurityBits="11"
+      Sequence="500"
+      Type="9007"
+      VersioningEnabled="FALSE">
+  </ListTemplate>
+  <ListTemplate
+      FeatureId="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+      BaseType="0"
+      Category="Custom Lists"
+      Name="Delegates"
+      DisplayName="Delegates"
+      Description=""
+      DisableAttachments="True"
+      DisallowContentTypes="False"
+      EnableModeration="False"
+      FolderCreation="False"
+      Hidden="False"
+      HiddenList="False"
+      OnQuickLaunch="True"
+      SecurityBits="11"
+      Sequence="500"
+      Type="9008"
+      VersioningEnabled="FALSE">
+  </ListTemplate>
+</Elements>

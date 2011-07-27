@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A76869BF-26C5-47E1-9DFF-E55ACA161F7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CA.SharePoint.WebParts</RootNamespace>
+    <AssemblyName>CA.SharePoint.WebParts</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>CA.SharePoint.WebParts.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/CA.SharePoint.WebParts/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\target\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeArt.SharePoint.CamlQuery, Version=1.0.0.0, Culture=neutral, PublicKeyToken=43536cfde91ea799, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\CodeArt.SharePoint.CamlQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2, Version=2.6.3.22451, Culture=neutral, PublicKeyToken=4f86767c9b519a06, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Office.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Office.Server.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EditParts\FieldSelector.cs" />
+    <Compile Include="EditParts\ListExportFieldEditorPart.cs" />
+    <Compile Include="EditParts\ListQueryFieldEditorPart.cs" />
+    <Compile Include="WebParts\CABannerOR.cs" />
+    <Compile Include="WebParts\CABannerSR.cs" />
+    <Compile Include="WebParts\CALeaveBalance.cs" />
+    <Compile Include="WebParts\CALeaveReport.cs" />
+    <Compile Include="WebParts\CALinkToMyApprove.cs" />
+    <Compile Include="WebParts\CALinkToWFAllItems.cs" />
+    <Compile Include="WebParts\CALinkToWFMyApply.cs" />
+    <Compile Include="WebParts\CompanyNavPart.cs" />
+    <Compile Include="WebParts\CAQuickNavPart.cs" />
+    <Compile Include="WebParts\CAWorkFlowNavigation.cs" />
+    <Compile Include="WebParts\CADeptDescriptionPart.cs" />
+    <Compile Include="WebParts\MyTaskWebPart.cs" />
+    <Compile Include="WebParts\MoreOrganizationPart.cs" />
+    <Compile Include="WebParts\OrganizationPart.cs" />
+    <Compile Include="WebParts\RedirectToUserDetails.cs" />
+    <Compile Include="WebParts\TemplateWebPart.cs" />
+    <Compile Include="WebParts\CASiteNavigation.cs" />
+    <Compile Include="WebParts\DocumentRedirectWebpart.cs" />
+    <Compile Include="WebParts\FckMossEditor.cs" />
+    <Compile Include="WebParts\HtmlWebPart.cs" />
+    <Compile Include="ListQueryWebPart\BaseQueryControl.cs" />
+    <Compile Include="ListQueryWebPart\CAMLQueryProviderPart.cs" />
+    <Compile Include="ListQueryWebPart\IQueryConditionProvider.cs" />
+    <Compile Include="ListQueryWebPart\IQueryControl.cs" />
+    <Compile Include="ListQueryWebPart\ListQueryConditionWebPart.cs" />
+    <Compile Include="ListQueryWebPart\ListQueryWebPart.cs" />
+    <Compile Include="ListQueryWebPart\QueryControlAttachments.cs" />
+    <Compile Include="ListQueryWebPart\QueryControlBoolean.cs" />
+    <Compile Include="ListQueryWebPart\QueryControlChioce.cs" />
+    <Compile Include="ListQueryWebPart\QueryControlDate.cs" />
+    <Compile Include="ListQueryWebPart\QueryControlFactory.cs" />
+    <Compile Include="ListQueryWebPart\QueryControlMultiChioce.cs" />
+    <Compile Include="ListQueryWebPart\QueryControlText.cs" />
+    <Compile Include="ListQueryWebPart\QueryControlUser.cs" />
+    <Compile Include="ListQueryWebPart\QueryKeyWordControl.cs" />
+    <Compile Include="WebParts\BaseSPListWebPart.cs" />
+    <Compile Include="WebParts\BaseSPWebPart.cs" />
+    <Compile Include="WebParts\CalendarWebPart.cs" />
+    <Compile Include="WebParts\CamlListViewWebPart.cs" />
+    <Compile Include="WebParts\ClockWebPart.cs" />
+    <Compile Include="WebParts\DateWebPart.cs" />
+    <Compile Include="EditParts\SkinEditorPart.cs" />
+    <Compile Include="EditParts\ViewEditorPart.cs" />
+    <Compile Include="WebParts\FlashWebPart.cs" />
+    <Compile Include="WebParts\FolderTreeWebPart.cs" />
+    <Compile Include="WebParts\IframeWebPart.cs" />
+    <Compile Include="WebParts\ListFormWebPart.cs" />
+    <Compile Include="WebParts\ListItemLinkMenuWebPart.cs" />
+    <Compile Include="WebParts\ListTreeViewWebPart.cs" />
+    <Compile Include="WebParts\ListViewWebPart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\QuickNavigationWebPart.cs" />
+    <Compile Include="WebParts\RedirectUrlWebpart.cs" />
+    <Compile Include="WebParts\ScopeSearchWebPart.cs" />
+    <Compile Include="WebParts\SiteNavigation.cs" />
+    <Compile Include="WebParts\SiteNavigationHorizontal.cs" />
+    <Compile Include="WebParts\TaskWebPart.cs" />
+    <Compile Include="WebParts\WeatherWebPart.cs" />
+    <Compile Include="WebPartSkin\ListItemViewWebPart.cs" />
+    <Compile Include="WebPartSkin\ReplaceTagManager.cs" />
+    <Compile Include="WebPartSkin\SiteSkinManager.cs" />
+    <Compile Include="WebPartSkin\SkinElement.cs" />
+    <Compile Include="WebPartSkin\SkinManager.cs" />
+    <Compile Include="WebPartSkin\SkinParser.cs" />
+    <Compile Include="WebPartSkin\ValueProviders\ITagValueProvider.cs" />
+    <Compile Include="WebPartSkin\ValueProviders\SPListItemValueProvider.cs" />
+    <Compile Include="WebPartSkin\ValueProviders\SPListValueProvider.cs" />
+    <Compile Include="WebPartSkin\ValueProviders\TagValueProviderManager.cs" />
+    <Compile Include="WebPartSkin\ValueProviders\WebPartValueProvider.cs" />
+    <Compile Include="WebParts\WebPartContainer.cs" />
+    <Compile Include="WebParts\CADepartmentNewsPart.cs" />
+    <Compile Include="WebParts\CAAddItemWebPart.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CA.SharePoint.Utilities\CA.SharePoint.Utilities.csproj">
+      <Project>{EFFC1125-4727-4BCE-8AE0-B519ECBABD85}</Project>
+      <Name>CA.SharePoint.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CA.SharePoint.WebControls\CA.SharePoint.WebControls.csproj">
+      <Project>{C413BFBE-1974-4047-B152-75855039E4D0}</Project>
+      <Name>CA.SharePoint.WebControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CA.Web\CA.Web.csproj">
+      <Project>{2A298162-DBE6-4907-A52C-7A5C0560E3B5}</Project>
+      <Name>CA.Web %28CA.Web\CA.Web%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CA.SharePoint.WebParts.snk" />
+    <None Include="DeployDLL82.cmd" />
+    <None Include="ListQueryWebPart\ListQueryConditionWebPart.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

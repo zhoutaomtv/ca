@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate
+      FeatureId="{d3148d4d-4c6b-41be-8aee-4ca587856cdb}"
+      BaseType="0"
+      Category="Custom Lists"
+      Name="CreationOrder"
+      DisplayName="Creation Order"
+      Description=""
+      DisableAttachments="True"
+      DisallowContentTypes="False"
+      EnableModeration="False"
+      FolderCreation="False"
+      Hidden="False"
+      HiddenList="False"
+      OnQuickLaunch="True"
+      SecurityBits="11"
+      Sequence="500"
+      Type="9003"
+      VersioningEnabled="FALSE">
+  </ListTemplate>
+</Elements>

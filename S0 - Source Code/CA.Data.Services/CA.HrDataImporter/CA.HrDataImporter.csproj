@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{973D12B1-6F9D-4EA6-BB2D-1B8468669301}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CA.HrDataImporter</RootNamespace>
+    <AssemblyName>CA.HrDataImporter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Server, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\12\ISAPI\Microsoft.Office.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\12\ISAPI\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\Logger.cs" />
+    <Compile Include="Extensions\SPHelper.cs" />
+    <Compile Include="Extensions\TypeExtensions.cs" />
+    <Compile Include="Providers\AD\ADDataProvider.cs" />
+    <Compile Include="Providers\AD\ADDataReader.cs" />
+    <Compile Include="Providers\AD\IADDataReader.cs" />
+    <Compile Include="Providers\IDataProviders.cs" />
+    <Compile Include="Providers\Csv\CsvDataProvider.cs" />
+    <Compile Include="Providers\Csv\CsvRow.cs" />
+    <Compile Include="Providers\Csv\CsvDataReader.cs" />
+    <Compile Include="Providers\Exceptions\BaseException.cs" />
+    <Compile Include="Providers\Exceptions\DuplicateDataFieldNameException.cs" />
+    <Compile Include="Providers\Exceptions\DuplicateDataTableColumnNameException.cs" />
+    <Compile Include="Providers\Exceptions\MissingDataFieldNameException.cs" />
+    <Compile Include="Providers\Exceptions\MissingDataTableColumnNameException.cs" />
+    <Compile Include="Providers\Exceptions\NullRequiredFiledException.cs" />
+    <Compile Include="Providers\IDataMapperFactory.cs" />
+    <Compile Include="Providers\Csv\ICsvDataReader.cs" />
+    <Compile Include="Providers\Mapping\ColumnMapping.cs" />
+    <Compile Include="Providers\Mapping\DataMapper.cs" />
+    <Compile Include="Providers\Mapping\DataMapping.cs" />
+    <Compile Include="Providers\Mapping\IDataMapper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\DataMapperFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EmbeddedResource Include="Providers\Schema\DataMapping.xsd">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="Providers\Schema\HRDataImportExceptions.stp" />
+    <None Include="Providers\Schema\Sample.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADDataMapping.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="CsvDataMapping.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Providers\Schema\SampleCsvDefinition.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

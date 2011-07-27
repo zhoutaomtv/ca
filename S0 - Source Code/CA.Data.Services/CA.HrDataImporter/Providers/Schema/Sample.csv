@@ -1,0 +1,4 @@
+Employee ID	Employee Name  (EN)	Employee Name (ZH)	Employee Position (EN)	Employee Position (ZH)	Employee Department (EN)	Employee Department (ZH)	Employee Mobile Phone Number	Employee’s Line Manager (ID)	Employee’s approval right
+10000001	Tang Jacky 	        唐杰克	                Senior Manager 	        高级经理	        HR 	                        人力资源部	                13900010001	                10000000	                X
+20000001	Tim Tomas 	        张君宝	                Manager 	        经理	                FI 	                        财务部	                        13900010002	                20000000	                X
+30000001	Tim Duncan 	        李太白	                Assistant 	        助理	                LO 	                        后勤部	                        13900010003	                30000000	

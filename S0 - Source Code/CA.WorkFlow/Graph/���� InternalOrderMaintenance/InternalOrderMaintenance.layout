@@ -1,0 +1,261 @@
+﻿<ns0:FlowchartWorkflowV2Designer xmlns:ns1="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Name="ROOT" Location="30, 30" Size="479, 632" IsExecuting="False" xmlns:ns0="clr-namespace:QuickFlow.Design;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+	<ns0:FlowchartWorkflowV2Designer.DesignerConnectors>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Right" SourceConnectionEdge="Bottom" TargetActivity="end1" SourceActivity="CFOTask" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="339" Y="498" />
+				<ns1:Point X="339" Y="557" />
+				<ns1:Point X="173" Y="557" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Top" SourceConnectionEdge="Bottom" TargetActivity="end1" SourceActivity="FinanceAnalystTask" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="135" Y="347" />
+				<ns1:Point X="135" Y="359" />
+				<ns1:Point X="133" Y="359" />
+				<ns1:Point X="133" Y="540" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Right" SourceConnectionEdge="Left" TargetActivity="FinanceAnalystTask" SourceActivity="DepartmentManagerTask" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="273" Y="323" />
+				<ns1:Point X="261" Y="323" />
+				<ns1:Point X="261" Y="326" />
+				<ns1:Point X="200" Y="326" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Right" SourceConnectionEdge="Left" TargetActivity="FinanceAnalystTask" SourceActivity="CFOTask" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="274" Y="477" />
+				<ns1:Point X="212" Y="477" />
+				<ns1:Point X="212" Y="326" />
+				<ns1:Point X="200" Y="326" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Top" SourceConnectionEdge="Bottom" TargetActivity="CFOTask" SourceActivity="DepartmentManagerTask" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="338" Y="344" />
+				<ns1:Point X="338" Y="356" />
+				<ns1:Point X="339" Y="356" />
+				<ns1:Point X="339" Y="457" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Right" SourceConnectionEdge="Right" TargetActivity="end1" SourceActivity="DepartmentManagerTask" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="403" Y="323" />
+				<ns1:Point X="439" Y="323" />
+				<ns1:Point X="439" Y="557" />
+				<ns1:Point X="173" Y="557" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Top" SourceConnectionEdge="Bottom" TargetActivity="DepartmentManagerTask" SourceActivity="start1" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="140" Y="130" />
+				<ns1:Point X="140" Y="243" />
+				<ns1:Point X="338" Y="243" />
+				<ns1:Point X="338" Y="303" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Top" SourceConnectionEdge="Bottom" TargetActivity="DepartmentManagerTask" SourceActivity="CompleteTask" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="331" Y="133" />
+				<ns1:Point X="331" Y="145" />
+				<ns1:Point X="338" Y="145" />
+				<ns1:Point X="338" Y="303" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Right" SourceConnectionEdge="Top" TargetActivity="CompleteTask" SourceActivity="CompleteTask" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="331" Y="92" />
+				<ns1:Point X="331" Y="82" />
+				<ns1:Point X="418" Y="82" />
+				<ns1:Point X="418" Y="112" />
+				<ns1:Point X="396" Y="112" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+		<ns2:StepConnector TargetConnectionIndex="0" SourceConnectionIndex="0" TargetConnectionEdge="Left" SourceConnectionEdge="Right" TargetActivity="CompleteTask" SourceActivity="start1" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628">
+			<ns2:StepConnector.Segments>
+				<ns1:Point X="180" Y="112" />
+				<ns1:Point X="180" Y="112" />
+				<ns1:Point X="266" Y="112" />
+			</ns2:StepConnector.Segments>
+			<ns2:StepConnector.Pen>
+				<ns1:Pen Width="2.5" Color="0XFF969696" Alignment="Center" DashOffset="0" DashStyle="Solid" StartCap="Flat" MiterLimit="10" EndCap="Custom" LineJoin="Round" DashCap="Flat">
+					<ns1:Pen.Transform>
+						<ns3:Matrix xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.Transform>
+					<ns1:Pen.CustomEndCap>
+						<ns3:AdjustableArrowCap Filled="True" WidthScale="1" Height="3" StrokeJoin="Miter" BaseCap="Triangle" MiddleInset="0" BaseInset="1" Width="3" xmlns:ns3="clr-namespace:System.Drawing.Drawing2D;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+					</ns1:Pen.CustomEndCap>
+					<ns1:Pen.CompoundArray>
+						<x:Array Type="{x:Type p8:Single}" xmlns:p8="clr-namespace:System;Assembly=mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" />
+					</ns1:Pen.CompoundArray>
+					<ns1:Pen.Brush>
+						<ns1:SolidBrush Color="0XFF969696" />
+					</ns1:Pen.Brush>
+				</ns1:Pen>
+			</ns2:StepConnector.Pen>
+		</ns2:StepConnector>
+	</ns0:FlowchartWorkflowV2Designer.DesignerConnectors>
+	<ns0:FlowchartWorkflowV2Designer.Designers>
+		<ns2:StartActivityDesigner Size="80, 35" Name="start1" Location="100, 95" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628" />
+		<ns2:CommonActivityDesigner Size="130, 41" Name="CompleteTask" Location="266, 92" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628" />
+		<ns2:EndDesigner Size="80, 35" Name="end1" Location="93, 540" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628" />
+		<ns2:CommonActivityDesigner Size="130, 41" Name="DepartmentManagerTask" Location="273, 303" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628" />
+		<ns2:CommonActivityDesigner Size="130, 41" Name="FinanceAnalystTask" Location="70, 306" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628" />
+		<ns2:CommonActivityDesigner Size="130, 41" Name="CFOTask" Location="274, 457" xmlns:ns2="clr-namespace:QuickFlow;Assembly=QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628" />
+		<ns0:LineRuleDesigner Name="lineRule8" Location="256, 557" Size="30, 15" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule4" Location="133, 449" Size="5, 5" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule6" Location="230, 326" Size="30, 15" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule9" Location="212, 401" Size="30, 15" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule5" Location="339, 406" Size="30, 15" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule7" Location="439, 440" Size="30, 15" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule1" Location="239, 243" Size="30, 15" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule3" Location="338, 224" Size="30, 15" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule2" Location="374, 82" Size="30, 15" EnableUserDrawnConnectors="False" />
+		<ns0:LineRuleDesigner Name="lineRule10" Location="223, 112" Size="30, 15" EnableUserDrawnConnectors="False" />
+	</ns0:FlowchartWorkflowV2Designer.Designers>
+</ns0:FlowchartWorkflowV2Designer>

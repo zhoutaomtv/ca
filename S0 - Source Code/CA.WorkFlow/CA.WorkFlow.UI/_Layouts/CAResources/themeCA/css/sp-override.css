@@ -1,0 +1,73 @@
+﻿.ca-people-finder .ms-inputuserfield
+{
+    width: 95%!important;
+}
+
+.ca-menu
+{
+    width: 100%;
+    margin: 5px 0;
+}
+
+.ca-menu-item:hover
+{
+    border: 1px solid #c0c5be;
+    background-color: #fee6a0;
+}
+
+.ca-menu-item a
+{
+    color: #000;
+}
+
+.ca-menu-item a input
+{
+    float: left;
+	margin-right: 5px;
+    padding: 0;
+    border: 0;
+    width: auto;
+	background-color: transparent;
+}
+
+.ca-menu-item a label
+{
+    display: block;
+    float: left;
+    width: 70%;
+    height: 20px;
+    line-height: 20px;
+}
+
+.ca-menu-item td
+{
+	padding: 5px;
+}
+
+.ca-sub-menu
+{
+    width: 280px;
+    padding: 10px 10px 0;
+    border: 1px solid #999;
+}
+
+.ca-sub-menu .ca-menu-item
+{
+	width: 280px;
+}
+
+#ca-selected-categories
+{
+    margin: 5px;
+    padding: 0 10px;
+    border: 1px solid #999;
+    width: 380px;
+    height: 150px;
+}
+
+.ca-selected-category
+{
+    margin: 10px;
+    width: 100px;
+    float: left;
+}

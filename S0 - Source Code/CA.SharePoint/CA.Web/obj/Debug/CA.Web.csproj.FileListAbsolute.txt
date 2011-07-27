@@ -1,0 +1,7 @@
+D:\CA_P1\S0 - Source Code\CA.SharePoint\CA.Web\bin\Debug\CA.Web.dll
+D:\CA_P1\S0 - Source Code\CA.SharePoint\CA.Web\bin\Debug\CA.Web.pdb
+D:\CA_P1\S0 - Source Code\CA.SharePoint\CA.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\CA_P1\S0 - Source Code\CA.SharePoint\CA.Web\obj\Debug\CA.Web.dll
+D:\CA_P1\S0 - Source Code\CA.SharePoint\CA.Web\obj\Debug\CA.Web.pdb
+D:\CA_P1\S0 - Source Code\CA.SharePoint\target\CA.Web.dll
+D:\CA_P1\S0 - Source Code\CA.SharePoint\target\CA.Web.pdb

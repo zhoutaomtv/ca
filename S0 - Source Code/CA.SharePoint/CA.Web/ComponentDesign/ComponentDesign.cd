@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="宋体" Size="9" />
+  <Class Name="CA.Web.ControlCreatedEventArgs" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\ComponentDesigner.cs</FileName>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA.Web.ComponentDesigner" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\ComponentDesigner.cs</FileName>
+      <HashCode>ADIBKoAEAgAQAgAAAAAgBEACAAAAAAAAAAAIAABAAIA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.FieldEditorFactory" Collapsed="true">
+    <Position X="2" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\FieldEditorFactory.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA.Web.StringFiledEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="6.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.BooleanFiledEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CA.Web.DateTimeFiledEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.EnumFiledEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAEAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.RadioEnumEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAEAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.RadioCheckValuesEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAEAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.CheckboxEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAEAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.ResourceEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="1" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAEAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.DropDownCheckValuesEditor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAEAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.Web.EditorHelper" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\Editors.cs</FileName>
+      <HashCode>AAAACCAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CA.Web.IDesignerUIBuilder">
+    <Position X="4.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\IDesignerUIBuilder.cs</FileName>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAgA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CA.Web.IFiledEditor">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Delegate Name="CA.Web.ControlCreatedEventHandler" Collapsed="true">
+    <Position X="1.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Controls\ComponentDesign\ComponentDesigner.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

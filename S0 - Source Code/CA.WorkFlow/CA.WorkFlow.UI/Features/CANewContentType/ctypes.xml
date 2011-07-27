@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<ContentType ID="0x0100BFC2AA67136B4622AC0093903B848E49" 
+	   Name="News"	
+	   Group="CA"
+	   Description=""
+	   ReadOnly="FALSE"
+	   Version="0">
+		<XmlDocuments>
+			<XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+				<FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+					<Display>_layouts/CA/News/NewsView.aspx</Display>
+					<Edit>_layouts/CA/News/NewsView.aspx</Edit>
+					<New>_layouts/CA/News/PublishNews.aspx</New>
+				</FormUrls>
+			</XmlDocument>
+		</XmlDocuments>
+	</ContentType>
+</Elements>

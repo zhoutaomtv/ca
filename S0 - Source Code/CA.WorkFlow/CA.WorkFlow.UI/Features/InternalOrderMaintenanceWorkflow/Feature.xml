@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feature  Id="{ef5dc053-00c8-49fd-abe0-1835950c4f7a}"
+          Title="Internal Order Maintenance Workflow"
+		  Description="Create list template and list for Internal Order Maintenance"
+          Scope="Web"
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="ListTemplate.xml" />
+    <ElementManifest Location="ListCreator.xml" />
+  </ElementManifests>
+</Feature>

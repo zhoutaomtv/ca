@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListTemplate
+      FeatureId="{3292E8F8-3FA4-4128-868C-528D46C06FAB}"
+      BaseType="0"
+      Category="Custom Lists"
+      Name="NonTradeSupplierSetupMaintenanceWorkflow"
+      DisplayName="Non Trade Supplier Setup Maintenance Workflow"
+      Description=""
+      DisableAttachments="True"
+      DisallowContentTypes="False"
+      EnableModeration="False"
+      FolderCreation="False"
+      Hidden="False"
+      HiddenList="False"
+      OnQuickLaunch="True"
+      SecurityBits="11"
+      Sequence="500"
+      Type="9000"
+      VersioningEnabled="FALSE">
+  </ListTemplate>
+</Elements>

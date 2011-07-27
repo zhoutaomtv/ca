@@ -1,0 +1,14 @@
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o installfeature -name CommonDataAutoFill
+
+Operation completed successfully.
+
+C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\BIN>
+STSADM.EXE -o uninstallfeature -name CommonDataAutoFill
+
+Operation completed successfully.

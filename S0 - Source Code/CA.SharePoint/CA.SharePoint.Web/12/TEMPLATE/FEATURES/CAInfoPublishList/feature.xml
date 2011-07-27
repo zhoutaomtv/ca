@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Feature Id="110A550D-06E7-4832-992B-A65999A28A9E" 
+    Title="Information publish"
+    Description="$Resources:core,announcementslistFeatureDesc;"
+    Version="1.0.0.0"
+    Scope="Site"
+    Hidden="FALSE"
+    DefaultResourceFile="core"    
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ElementManifests>
+        <ElementManifest Location="Elements.xml"/>
+	<ElementFile Location="InfoPublish/schema.xml" />
+
+    </ElementManifests>
+</Feature>

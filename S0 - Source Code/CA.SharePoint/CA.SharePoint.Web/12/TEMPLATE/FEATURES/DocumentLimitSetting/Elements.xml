@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction Id="CA.FileLimit"
+     RegistrationType="List"
+     RegistrationId="101"
+    GroupId="GeneralSettings"
+    Location="Microsoft.SharePoint.ListEdit"
+     Sequence="1000"
+     Rights="ManageLists"
+     Title="$Resources:ca,Document_Size_Limit_Setting;">
+    <UrlAction Url="~site/_layouts/ca/DocumentLimit.aspx?List={ListId}"/>
+  </CustomAction>
+  <CustomAction Id="CA.FileLimit"
+    RegistrationType="List"
+    RegistrationId="109"
+   GroupId="GeneralSettings"
+   Location="Microsoft.SharePoint.ListEdit"
+    Sequence="1000"
+    Rights="ManageLists"
+    Title="$Resources:ca,Document_Size_Limit_Setting;">
+    <UrlAction Url="~site/_layouts/ca/DocumentLimit.aspx?List={ListId}"/>
+  </CustomAction>
+</Elements>

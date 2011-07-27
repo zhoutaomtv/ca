@@ -1,0 +1,1308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{22DD55C9-AFBC-4D0D-A25A-1BFB309BC759}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CA.WorkFlow.UI</RootNamespace>
+    <AssemblyName>CA.WorkFlow.UI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CA.SharePoint.Utilities">
+      <HintPath>..\..\ref\CA.SharePoint.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="CA.Web">
+      <HintPath>..\..\ref\CA.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeArt.SharePoint.CamlQuery, Version=1.0.0.0, Culture=neutral, PublicKeyToken=43536cfde91ea799, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\CodeArt.SharePoint.CamlQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeArt.SharePoint.MultiLanSupport">
+      <HintPath>..\..\ref\CodeArt.SharePoint.MultiLanSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="FredCK.FCKeditorV2">
+      <HintPath>..\..\ref\FredCK.FCKeditorV2.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet">
+      <HintPath>..\..\ref\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\ref\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="iTextAsian">
+      <HintPath>..\..\ref\iTextAsian.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\ref\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Conversion.v3.5" />
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Security, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\Microsoft Shared\web server extensions\12\ISAPI\Microsoft.SharePoint.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickFlow, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\QuickFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickFlow.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\QuickFlow.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="QuickFlow.UI.ApplicationPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ec1e0fe6e1745628, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\QuickFlow.UI.ApplicationPages.dll</HintPath>
+    </Reference>
+    <Reference Include="SmartForm">
+      <HintPath>..\..\ref\SmartForm.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\CANewContentType\ctypes.xml" />
+    <Content Include="Features\CANewContentType\feature.xml" />
+    <Content Include="Features\CommonDataAutoFill\command.txt" />
+    <Content Include="Features\CommonDataAutoFill\Feature.xml" />
+    <Content Include="Features\CommonDataAutoFill\FillEmailTemplate.xml" />
+    <Content Include="Features\CommonDataAutoFill\FillModules.xml" />
+    <Content Include="Features\CommonList\Delegates\AllItems.aspx" />
+    <Content Include="Features\CommonList\Delegates\DispForm.aspx" />
+    <Content Include="Features\CommonList\Delegates\EditForm.aspx" />
+    <Content Include="Features\CommonList\Delegates\NewForm.aspx" />
+    <Content Include="Features\CommonList\Delegates\schema.xml" />
+    <Content Include="Features\CommonList\Modules\AllItems.aspx" />
+    <Content Include="Features\CommonList\Modules\DispForm.aspx" />
+    <Content Include="Features\CommonList\Modules\EditForm.aspx" />
+    <Content Include="Features\CommonList\Modules\NewForm.aspx" />
+    <Content Include="Features\CommonList\Modules\schema.xml" />
+    <Content Include="Features\CreationOrder\command.txt" />
+    <Content Include="Features\CreationOrder\CreationOrder\AllItems.aspx" />
+    <Content Include="Features\CreationOrder\CreationOrder\DispForm.aspx" />
+    <Content Include="Features\CreationOrder\CreationOrder\EditForm.aspx" />
+    <Content Include="Features\CreationOrder\CreationOrder\MyApply.aspx" />
+    <Content Include="Features\CreationOrder\CreationOrder\NewForm.aspx" />
+    <Content Include="Features\CreationOrder\CreationOrder\schema.xml" />
+    <Content Include="Features\CreationOrder\Feature.xml" />
+    <Content Include="Features\CreationOrder\ListCreator.xml" />
+    <Content Include="Features\CreationOrder\ListTemplate.xml" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\command.txt" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\Feature.xml" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\InternalOrderMaintenanceWorkflow\AllItems.aspx" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\InternalOrderMaintenanceWorkflow\DispForm.aspx" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\InternalOrderMaintenanceWorkflow\EditForm.aspx" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\InternalOrderMaintenanceWorkflow\MyApply.aspx" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\InternalOrderMaintenanceWorkflow\NewForm.aspx" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\InternalOrderMaintenanceWorkflow\schema.xml" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\ListCreator.xml" />
+    <Content Include="Features\InternalOrderMaintenanceWorkflow\ListTemplate.xml" />
+    <Content Include="Features\LeaveReport\command.txt" />
+    <Content Include="Features\LeaveReport\Feature.xml" />
+    <Content Include="Features\LeaveReport\LeaveData\All.aspx" />
+    <Content Include="Features\LeaveReport\LeaveData\AllItems.aspx" />
+    <Content Include="Features\LeaveReport\LeaveData\DispForm.aspx" />
+    <Content Include="Features\LeaveReport\LeaveData\EditForm.aspx" />
+    <Content Include="Features\LeaveReport\LeaveData\NewForm.aspx" />
+    <Content Include="Features\LeaveReport\LeaveData\schema.xml" />
+    <Content Include="Features\LeaveReport\LeaveDownloads\AllItems.aspx" />
+    <Content Include="Features\LeaveReport\LeaveDownloads\DispForm.aspx" />
+    <Content Include="Features\LeaveReport\LeaveDownloads\EditForm.aspx" />
+    <Content Include="Features\LeaveReport\LeaveDownloads\NewForm.aspx" />
+    <Content Include="Features\LeaveReport\LeaveDownloads\schema.xml" />
+    <Content Include="Features\LeaveReport\ListCreator.xml" />
+    <Content Include="Features\LeaveReport\ListTemplate.xml" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\BaseContentType.xml" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\command.txt" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\ContentType.xml" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\Feature.xml" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\ListCreator.xml" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\ListTemplate.xml" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\NonTradeSupplierSetupMaintenanceWorkflow\AllItems.aspx" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\NonTradeSupplierSetupMaintenanceWorkflow\DispForm.aspx" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\NonTradeSupplierSetupMaintenanceWorkflow\EditForm.aspx" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\NonTradeSupplierSetupMaintenanceWorkflow\MyApply.aspx" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\NonTradeSupplierSetupMaintenanceWorkflow\NewForm.aspx" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\NonTradeSupplierSetupMaintenanceWorkflow\schema.xml" />
+    <Content Include="Features\NonTradeSupplierSetupMaintenanceWorkflow\SiteColumn.xml" />
+    <Content Include="Features\CommonList\command.txt" />
+    <Content Include="Features\CommonList\Feature.xml" />
+    <Content Include="Features\CommonList\ListCreator.xml" />
+    <Content Include="Features\CommonList\ListTemplate.xml" />
+    <Content Include="Features\CommonList\EmailTemplate\AllItems.aspx" />
+    <Content Include="Features\CommonList\EmailTemplate\DispForm.aspx" />
+    <Content Include="Features\CommonList\EmailTemplate\EditForm.aspx" />
+    <Content Include="Features\CommonList\EmailTemplate\NewForm.aspx" />
+    <Content Include="Features\CommonList\EmailTemplate\schema.xml" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\BaseWorkflowUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\Common.cs" />
+    <Compile Include="Constants\CAWorkflowStatus.cs" />
+    <Compile Include="Controls\CAActionsButton.cs" />
+    <Compile Include="Controls\CAFileControl.cs" />
+    <Compile Include="Controls\CAFormField.cs" />
+    <Compile Include="Controls\CAPeopleFinder.cs" />
+    <Compile Include="Controls\CATimeControl.cs" />
+    <Compile Include="Code\CAWorkFlowConstants.cs" />
+    <Compile Include="Controls\CAStartWFButton.cs" />
+    <Compile Include="Controls\CAImageButton.cs" />
+    <Compile Include="Controls\CAFileControl2.cs" />
+    <Compile Include="Controls\CADocFileControl.cs" />
+    <Compile Include="Controls\CAMossMenu.cs" />
+    <Compile Include="Controls\TaskTraceList.cs" />
+    <Compile Include="Services\IMailService.cs" />
+    <Compile Include="Services\MailService.cs" />
+    <Compile Include="Services\OperateExcel.cs" />
+    <Compile Include="Services\SendMail.cs" />
+    <Compile Include="Services\ValidateUtil.cs" />
+    <Compile Include="Controls\DDLLeaveType.cs" />
+    <Compile Include="Code\ExportPDF.cs" />
+    <Compile Include="Code\CAWorkFlowPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\Permission.cs" />
+    <Compile Include="Services\PermissionUtil.cs" />
+    <Compile Include="Code\QFUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\StoreSampling.cs" />
+    <Compile Include="Code\StoreSamplingSKU.cs" />
+    <Compile Include="Services\WorkFlowUtil.cs" />
+    <Compile Include="_Layouts\CA\Delegation\DataEdit.ascx.cs">
+      <DependentUpon>DataEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\Delegation\DataEdit.ascx.designer.cs">
+      <DependentUpon>DataEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\NewsApprove.aspx.cs">
+      <DependentUpon>NewsApprove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\NewsApprove.aspx.designer.cs">
+      <DependentUpon>NewsApprove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\NewsEdit.aspx.cs">
+      <DependentUpon>NewsEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\NewsEdit.aspx.designer.cs">
+      <DependentUpon>NewsEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\NewsFormDoc.aspx.cs">
+      <DependentUpon>NewsFormDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\NewsFormDoc.aspx.designer.cs">
+      <DependentUpon>NewsFormDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\NewsView.aspx.cs">
+      <DependentUpon>NewsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\NewsView.aspx.designer.cs">
+      <DependentUpon>NewsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\PublishNews.aspx.cs">
+      <DependentUpon>PublishNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\PublishNews.aspx.designer.cs">
+      <DependentUpon>PublishNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\FileUpload.ascx.cs">
+      <DependentUpon>FileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\News\FileUpload.ascx.designer.cs">
+      <DependentUpon>FileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChangeRequest\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChangeRequest\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChangeRequest\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChangeRequest\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChangeRequest\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChangeRequest\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChangeRequest\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChangeRequest\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\ApplicantEditForm.aspx.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\ApplicantEditForm.aspx.designer.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\FileMultiTable.ascx.cs">
+      <DependentUpon>FileMultiTable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\FileMultiTable.ascx.designer.cs">
+      <DependentUpon>FileMultiTable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\ProjectMultiTable.ascx.cs">
+      <DependentUpon>ProjectMultiTable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\ProjectMultiTable.ascx.designer.cs">
+      <DependentUpon>ProjectMultiTable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ChoppingApplication\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\ApplicantEditForm.aspx.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\ApplicantEditForm.aspx.designer.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\testExportExcel.aspx.cs">
+      <DependentUpon>testExportExcel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\testExportExcel.aspx.designer.cs">
+      <DependentUpon>testExportExcel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\CreateOrderUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\DataEdit.ascx.cs">
+      <DependentUpon>DataEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\DataEdit.ascx.designer.cs">
+      <DependentUpon>DataEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\DataView.ascx.cs">
+      <DependentUpon>DataView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\DataView.ascx.designer.cs">
+      <DependentUpon>DataView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\CreationOrder\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DataEdit.ascx.cs">
+      <DependentUpon>DataEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DataEdit.ascx.designer.cs">
+      <DependentUpon>DataEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\InternalOrderUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DataView.ascx.cs">
+      <DependentUpon>DataView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DataView.ascx.designer.cs">
+      <DependentUpon>DataView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\test.ascx.cs">
+      <DependentUpon>test.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\test.ascx.designer.cs">
+      <DependentUpon>test.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\WebForm.aspx.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\WebForm.aspx.designer.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\SaveForm.aspx.cs">
+      <DependentUpon>SaveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\SaveForm.aspx.designer.cs">
+      <DependentUpon>SaveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DataEdit.ascx.cs">
+      <DependentUpon>DataEdit.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DataEdit.ascx.designer.cs">
+      <DependentUpon>DataEdit.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DataView.ascx.cs">
+      <DependentUpon>DataView.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DataView.ascx.designer.cs">
+      <DependentUpon>DataView.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\SelectVendor.ascx.cs">
+      <DependentUpon>SelectVendor.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\SelectVendor.ascx.designer.cs">
+      <DependentUpon>SelectVendor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\NonTradeSupplierSetupMaintenanceControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\UserControl\TaskTrace.ascx.cs">
+      <DependentUpon>TaskTrace.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\UserControl\TaskTrace.ascx.designer.cs">
+      <DependentUpon>TaskTrace.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\DataFormNew.ascx.cs">
+      <DependentUpon>DataFormNew.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\DataFormNew.ascx.designer.cs">
+      <DependentUpon>DataFormNew.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\MultiTable.ascx.cs">
+      <DependentUpon>MultiTable.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\MultiTable.ascx.designer.cs">
+      <DependentUpon>MultiTable.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\ApplicantEditForm.aspx.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\ApplicantEditForm.aspx.designer.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\PDF.aspx.cs">
+      <DependentUpon>PDF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\BusinessCard\PDF.aspx.designer.cs">
+      <DependentUpon>PDF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\Equipment\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\Equipment\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\Equipment\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\Equipment\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\Equipment\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\Equipment\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\Equipment\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\Equipment\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\ApplicantEditForm.aspx.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\ApplicantEditForm.aspx.designer.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\ApplicantEditForm.aspx.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\ApplicantEditForm.aspx.designer.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\NewSupplierCreation\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreMaintenance\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreMaintenance\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreMaintenance\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreMaintenance\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreMaintenance\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreMaintenance\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreMaintenance\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreMaintenance\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\StoreSampling\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\UpdateForm.aspx.cs">
+      <DependentUpon>UpdateForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\UpdateForm.aspx.designer.cs">
+      <DependentUpon>UpdateForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\SavedForm.aspx.cs">
+      <DependentUpon>SavedForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReinspection\SavedForm.aspx.designer.cs">
+      <DependentUpon>SavedForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\SavedForm.aspx.cs">
+      <DependentUpon>SavedForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\SavedForm.aspx.designer.cs">
+      <DependentUpon>SavedForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\UpdateForm.aspx.cs">
+      <DependentUpon>UpdateForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\SupplierReticketing\UpdateForm.aspx.designer.cs">
+      <DependentUpon>UpdateForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\ApplicantEditForm.aspx.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\ApplicantEditForm.aspx.designer.cs">
+      <DependentUpon>ApplicantEditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\CancelApproveForm.aspx.cs">
+      <DependentUpon>CancelApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\CancelApproveForm.aspx.designer.cs">
+      <DependentUpon>CancelApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TimeOff\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\ApproveForm.aspx.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\ApproveForm.aspx.designer.cs">
+      <DependentUpon>ApproveForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\DataForm.ascx.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\DataForm.ascx.designer.cs">
+      <DependentUpon>DataForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\DisplayForm.aspx.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\DisplayForm.aspx.designer.cs">
+      <DependentUpon>DisplayForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\EditForm.aspx.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\EditForm.aspx.designer.cs">
+      <DependentUpon>EditForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\SavedForm.aspx.cs">
+      <DependentUpon>SavedForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\TravelRequest\SavedForm.aspx.designer.cs">
+      <DependentUpon>SavedForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\UserControl\SingleFileUpload.ascx.cs">
+      <DependentUpon>SingleFileUpload.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\WorkFlows\UserControl\SingleFileUpload.ascx.designer.cs">
+      <DependentUpon>SingleFileUpload.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Layouts\CA\Delegation\NewForm.aspx.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Layouts\CA\Delegation\NewForm.aspx.designer.cs">
+      <DependentUpon>NewForm.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="deploy83.cmd" />
+    <None Include="Features\CANewContentType\install.cmd" />
+    <None Include="Features\CANewContentType\uninstall.cmd" />
+    <Content Include="_Layouts\CAResources\themeCA\css\jquery-ui.css" />
+    <Content Include="_Layouts\CAResources\themeCA\css\jquery-ui.custom.css" />
+    <Content Include="_Layouts\CAResources\themeCA\css\sp-override.css" />
+    <Content Include="_Layouts\CAResources\themeCA\js\framework.js" />
+    <Content Include="_Layouts\CAResources\themeCA\js\jquery-1.4.4.min.js" />
+    <Content Include="_Layouts\CAResources\themeCA\js\jquery-ui.min.js" />
+    <Content Include="_Layouts\CA\Delegation\DataEdit.ascx" />
+    <Content Include="_Layouts\CA\Layout.Master" />
+    <None Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\standard PO.xls" />
+    <None Include="_Layouts\CA\WorkFlows\StoreMaintenance\standard PO.xls" />
+    <Content Include="_Layouts\CA\News\NewsApprove.aspx" />
+    <Content Include="_Layouts\CA\News\NewsEdit.aspx" />
+    <Content Include="_Layouts\CA\News\NewsFormDoc.aspx" />
+    <Content Include="_Layouts\CA\News\NewsView.aspx" />
+    <Content Include="_Layouts\CA\News\PublishNews.aspx" />
+    <Content Include="_Layouts\CA\News\FileUpload.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChangeRequest\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChangeRequest\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChangeRequest\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChangeRequest\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChoppingApplication\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChoppingApplication\ApplicantEditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChoppingApplication\FileMultiTable.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChoppingApplication\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChoppingApplication\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChoppingApplication\ProjectMultiTable.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ChoppingApplication\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\ApplicantEditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ConstructionPurchasing\testExportExcel.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\CreationOrder\DataEdit.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\CreationOrder\DataView.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\CreationOrder\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\CreationOrder\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\CreationOrder\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\CreationOrder\NewForm.aspx" />
+    <Content Include="_Layouts\CAResources\themeCA\css\site.css" />
+    <Content Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DataEdit.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\InternalOrderMaintenance\DataView.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\test.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\WebForm.aspx" />
+    <Content Include="_Layouts\CAResources\themeCA\js\ca.site.js" />
+    <Content Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewStoreBudgetApplication\SaveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DataEdit.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DataView.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NonTradeSupplierSetupMaintenance\SelectVendor.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\UserControl\TaskTrace.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreSampling\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\DataFormNew.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\MultiTable.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\BusinessCard\PDF.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\ApplicantEditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\ITHardwareOrSoftwareApplication\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\js\common.js" />
+    <Content Include="_Layouts\CA\WorkFlows\NewSupplierCreation\ApplicantEditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewSupplierCreation\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewSupplierCreation\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewSupplierCreation\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\NewSupplierCreation\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreMaintenance\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreMaintenance\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreMaintenance\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreMaintenance\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReinspection\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReinspection\UpdateForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReinspection\SavedForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReticketing\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReticketing\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReticketing\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReticketing\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReticketing\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReticketing\SavedForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReticketing\UpdateForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\CancelApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\Web.config" />
+    <Content Include="_Layouts\CA\Application.Master" />
+    <Content Include="_Layouts\CA\WorkFlows\BusinessCard\ApplicantEditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\BusinessCard\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\BusinessCard\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\BusinessCard\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\BusinessCard\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\css\form.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\menu.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\screen-ie6.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\style_1.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\style_2.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\style_3.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\style_4.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\style_5.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\style_6.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\table.css" />
+    <Content Include="_Layouts\CA\WorkFlows\css\WorkFlow.css" />
+    <Content Include="_Layouts\CA\WorkFlows\Equipment\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\Equipment\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\Equipment\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\Equipment\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\images\01.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\01_1.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\02.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\02_2.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\03.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\04.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\05.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\application_view_gallery.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\back.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\bj.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\bj2.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\but2.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\button_lingerie_over.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\button_swimwear_over.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\calendar.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\cancel.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Cancel.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Card0.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Card1.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Card2.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Card3.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Card4.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Card5.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\cog_go.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\cog_gos.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\color1.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\color2.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\color3.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\color4.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\color5.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Company_New.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\computer_go.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\computer_link.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\content.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\content2.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Department.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Department2.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\down-arrow3.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\fade.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\foot1.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\footer.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\h2_bg.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\homepage_bj.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\icon_1.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\left.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\lefticon.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Library.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\logo-trans.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\menu-trans.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\menu-trans2.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\menu-trans3.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\menu-trans4.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\numicon02.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Organization_1.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Organization_2.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\pixelicious_001.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\pixelicious_028.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\purposeactive.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\purposeover.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Quick Navigation.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\right.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\right.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\rightnavactive.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\rightnavactive.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\rightnavbot.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\rightpic.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\rightpic02.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\rightpic04.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\rightpic05.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\righttxtbg.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\right_ul_li_bg.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\search.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\search.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\search_bg.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\send.gif" />
+    <Content Include="_Layouts\CA\WorkFlows\images\setup.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\sitemap_color.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Technology.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\test.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\test2.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\tick.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\Userinfo.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\viewmore.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\viewmoreover.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_1.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_10.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_11.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_12.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_13.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_14.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_2.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_3.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_4.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_5.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_6.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_7.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_8.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_9.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_bj.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_bj1.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_bj2.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\images\workflow_top_bg.png" />
+    <Content Include="_Layouts\CA\WorkFlows\images\zp.jpg" />
+    <Content Include="_Layouts\CA\WorkFlows\js\framework.js" />
+    <Content Include="_Layouts\CA\WorkFlows\js\jquery3.js" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreSampling\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreSampling\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreSampling\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\StoreSampling\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReinspection\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReinspection\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReinspection\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\SupplierReinspection\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\ApplicantEditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TimeOff\Test.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TravelRequest\ApproveForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TravelRequest\DataForm.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\TravelRequest\DisplayForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TravelRequest\EditForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TravelRequest\NewForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\TravelRequest\SavedForm.aspx" />
+    <Content Include="_Layouts\CA\WorkFlows\UserControl\FileFieldTemplate.ascx" />
+    <Content Include="_Layouts\CA\WorkFlows\UserControl\SingleFileUpload.ascx" />
+    <Content Include="_Layouts\CA\Delegation\NewForm.aspx" />
+    <Content Include="_Layouts\web.config" />
+    <None Include="deploy91.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59477</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CA.Web", "CA.Web", "{F0884E53-CD57-450E-9FD9-551B44A61664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA.SharePoint.WebParts", "CA.SharePoint.WebParts\CA.SharePoint.WebParts.csproj", "{A76869BF-26C5-47E1-9DFF-E55ACA161F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA.Web", "CA.Web\CA.Web.csproj", "{2A298162-DBE6-4907-A52C-7A5C0560E3B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA.SharePoint.Web", "CA.SharePoint.Web\CA.SharePoint.Web.csproj", "{3E3A23E3-FE82-43AF-97B7-E379EBD5887B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA.Sharepoint.UI", "CA.Sharepoint.UI\CA.Sharepoint.UI.csproj", "{BAB7012B-83D9-45B6-A8C8-4EE79C5301CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA.SharePoint.Utilities", "CA.SharePoint.Utilities\CA.SharePoint.Utilities.csproj", "{EFFC1125-4727-4BCE-8AE0-B519ECBABD85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA.SharePoint.WebControls", "CA.SharePoint.WebControls\CA.SharePoint.WebControls.csproj", "{C413BFBE-1974-4047-B152-75855039E4D0}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 7
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CA.Sharepoint.UI\\CA.Sharepoint.UI.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = CA.Sharepoint.UI\\
+		SccProjectUniqueName2 = CA.SharePoint.Utilities\\CA.SharePoint.Utilities.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = CA.SharePoint.Utilities\\
+		SccProjectUniqueName3 = CA.SharePoint.Web\\CA.SharePoint.Web.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = CA.SharePoint.Web\\
+		SccProjectUniqueName4 = CA.SharePoint.WebControls\\CA.SharePoint.WebControls.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = CA.SharePoint.WebControls\\
+		SccProjectUniqueName5 = CA.SharePoint.WebParts\\CA.SharePoint.WebParts.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = CA.SharePoint.WebParts\\
+		SccProjectUniqueName6 = CA.Web\\CA.Web.csproj
+		SccProjectTopLevelParentUniqueName6 = CA.SharePoint.sln
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = CA.Web\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A76869BF-26C5-47E1-9DFF-E55ACA161F7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76869BF-26C5-47E1-9DFF-E55ACA161F7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76869BF-26C5-47E1-9DFF-E55ACA161F7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76869BF-26C5-47E1-9DFF-E55ACA161F7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A298162-DBE6-4907-A52C-7A5C0560E3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A298162-DBE6-4907-A52C-7A5C0560E3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A298162-DBE6-4907-A52C-7A5C0560E3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A298162-DBE6-4907-A52C-7A5C0560E3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3A23E3-FE82-43AF-97B7-E379EBD5887B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3A23E3-FE82-43AF-97B7-E379EBD5887B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3A23E3-FE82-43AF-97B7-E379EBD5887B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3A23E3-FE82-43AF-97B7-E379EBD5887B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAB7012B-83D9-45B6-A8C8-4EE79C5301CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAB7012B-83D9-45B6-A8C8-4EE79C5301CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAB7012B-83D9-45B6-A8C8-4EE79C5301CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAB7012B-83D9-45B6-A8C8-4EE79C5301CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFFC1125-4727-4BCE-8AE0-B519ECBABD85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFFC1125-4727-4BCE-8AE0-B519ECBABD85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFFC1125-4727-4BCE-8AE0-B519ECBABD85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFFC1125-4727-4BCE-8AE0-B519ECBABD85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C413BFBE-1974-4047-B152-75855039E4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C413BFBE-1974-4047-B152-75855039E4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C413BFBE-1974-4047-B152-75855039E4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C413BFBE-1974-4047-B152-75855039E4D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A298162-DBE6-4907-A52C-7A5C0560E3B5} = {F0884E53-CD57-450E-9FD9-551B44A61664}
+	EndGlobalSection
+EndGlobal

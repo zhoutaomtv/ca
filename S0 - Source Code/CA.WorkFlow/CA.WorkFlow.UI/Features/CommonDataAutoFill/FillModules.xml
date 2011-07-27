@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements
+    xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance
+    Id="Modules"
+    Title="Modules"
+    FeatureId="{9e1913f1-2b3d-425d-965b-dc43090e9e7e}"
+    Description=""
+    TemplateType="9007"
+    Url="Lists/Modules"
+    OnQuickLaunch="TRUE"
+    >
+    <Data>
+      <Rows>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Change Request]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[IT]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[101]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[ChangeRequestWorkflow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[It Request]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[IT]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[102]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[ITRequestWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Leave Application]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[HR]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[103]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[TimeOffWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[New Employee Equipment Application]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[HR]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[104]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[NewEmployeeEquipmentApplication]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Business Card Application]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[HR]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[105]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[BusinessCardApplication]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Travel Request]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[HR]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[106]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[TravelRequestWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Chopping Application]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Legal]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[107]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[ChoppingApplicationWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Supplier Re-Ticketing Charge]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Commercial]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[108]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[SupplierReticketingWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Store Sampling]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Commercial]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[109]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[StoreSamplingWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[New Supplier Creation]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Commercial]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[110]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[NewSupplierCreationWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Supplier Re-Inspection Charge]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Commercial]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[111]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[SupplierReinspectionWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Construction Purchasing Request]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Construction]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[112]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[ConstructionPurchasingWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[New Store Budget Application]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Construction]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[113]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[NewStoreConstructionBudgetApplicationWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Store Maintenance]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Construction]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[114]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[StoreMaintenanceWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Non Trade Supplier Setup & Maintenance]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Finance]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[115]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[NonTradeSupplierSetupMaintenanceWorkFlow]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Internal Order Creation]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Finance]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[116]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[CreationOrder]]>
+          </Field>
+        </Row>
+        <Row>
+          <Field Name="Title">
+            <![CDATA[Internal Order Maintenance]]>
+          </Field>
+          <Field Name="BelongsTo">
+            <![CDATA[Finance]]>
+          </Field>
+          <Field Name="Tag">
+            <![CDATA[117]]>
+          </Field>
+          <Field Name="ListName">
+            <![CDATA[InternalOrderMaintenanceWorkFlow]]>
+          </Field>
+        </Row>
+      </Rows>
+    </Data>
+  </ListInstance>
+</Elements>

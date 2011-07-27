@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="DataTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="Column">
+          <xs:complexType>
+            <xs:attribute name="Name" type="nonEmpty" use="required" />
+            <xs:attribute name="CanBeNull" type="xs:boolean" use="optional" />
+            <xs:attribute name="DataFieldName" type="nonEmpty" use="optional" />
+            <xs:attribute name="DefaultValue" type="nonEmpty" use="optional" />
+            <xs:attribute name="PlaceHolder" type="nonEmpty" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="nonEmpty">
+    <xs:restriction base="xs:token">
+      <xs:minLength value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

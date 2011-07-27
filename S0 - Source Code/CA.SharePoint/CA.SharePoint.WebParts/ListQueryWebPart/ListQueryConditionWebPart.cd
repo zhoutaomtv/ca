@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="宋体" Size="9" />
+  <Class Name="CA.SharePoint.CAMLQueryProviderPart" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\CAMLQueryProviderPart.cs</FileName>
+      <HashCode>AAACAAAQAAAIABAQAAAAAACDCAAAAAgAAAAAEAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA.SharePoint.QueryCondition" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\IQueryConditionProvider.cs</FileName>
+      <HashCode>AABAAAAIAAAIAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA.SharePoint.QueryConditionProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\IQueryConditionProvider.cs</FileName>
+      <HashCode>AAAAAAEAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.SharePoint.ListQueryConditionWebPart" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\ListQueryConditionWebPart.cs</FileName>
+      <HashCode>AAAAwIAAAgQAEFAQQAKEAEGCDgIgAIwAAAQECAAAAOg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA.SharePoint.QueryControlAttachments" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryControlAttachments.cs</FileName>
+      <HashCode>AAAAAAEAAAAAABAEAAAgAAACAACAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.SharePoint.QueryControlBoolean" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryControlBoolean.cs</FileName>
+      <HashCode>AAAAAAEAAAAAABAEAAAgAAACAACAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.SharePoint.QueryControlChoice" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryControlChioce.cs</FileName>
+      <HashCode>AAAAAAEAAAAAABAEAAAgAAACAACAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.SharePoint.QueryControlDate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryControlDate.cs</FileName>
+      <HashCode>gAAAAAAAAAAAABIEAAAgAAAAAACAAAQAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.SharePoint.QueryControlFactory" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryControlFactory.cs</FileName>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CA.SharePoint.QueryControlMultiChioce" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryControlMultiChioce.cs</FileName>
+      <HashCode>AAAAAAEAAAAAABAEAAAgAAACAACAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.SharePoint.QueryControlText" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryControlText.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAgAAACAACAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.SharePoint.QueryControlUser" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryControlUser.cs</FileName>
+      <HashCode>AAAAAAAAAAAAABAEAIAgAAACAACAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CA.SharePoint.RenderControlKeyWordControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.75" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\QueryKeyWordControl.cs</FileName>
+      <HashCode>AAAAAgAAAAAAABAEAAAgAAACAACAAAAAAAAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="CA.SharePoint.IQueryControl" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\IQueryControl.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CA.SharePoint.IQueryConditionProvider" Collapsed="true">
+    <Position X="5.75" Y="2" Width="2" />
+    <TypeIdentifier>
+      <FileName>ListQueryWebPart\IQueryConditionProvider.cs</FileName>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+</ClassDiagram>

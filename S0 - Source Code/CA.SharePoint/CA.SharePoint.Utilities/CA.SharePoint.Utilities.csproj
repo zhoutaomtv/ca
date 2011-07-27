@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFFC1125-4727-4BCE-8AE0-B519ECBABD85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CA.SharePoint.Utilities</RootNamespace>
+    <AssemblyName>CA.SharePoint.Utilities</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>CA.SharePoint.Utilities.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/CA.SharePoint.Utilities/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\target\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CodeArt.SharePoint.CamlQuery, Version=1.0.0.0, Culture=neutral, PublicKeyToken=43536cfde91ea799, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\CodeArt.SharePoint.CamlQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeArt.SharePoint.MultiLanSupport, Version=1.0.0.0, Culture=neutral, PublicKeyToken=fb342a992e9c6c52, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ref\CodeArt.SharePoint.MultiLanSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Access, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Office.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server.Search, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.Office.Server.Search.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CA.SharePoint.CamlQuery\CAMLBuilder.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\CAMLExpression\Expressions.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\CAMLExpression\SingleCAMLExpressions.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\ModelQuery\BaseFieldRef.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\ModelQuery\FieldRef.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\ModelQuery\IFieldRef.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\ModelQuery\TypeFieldRef.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\QueryField\QueryField.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\QueryField\TypeQueryField.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\QuerySentence.cs" />
+    <Compile Include="CA.SharePoint.CamlQuery\TestCase.cs" />
+    <Compile Include="Common\CAConstants.cs" />
+    <Compile Include="Common\ConfigManager.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Common\ControlTemplateManager.cs" />
+    <Compile Include="Common\Employee.cs" />
+    <Compile Include="Common\EventReceiverManager.cs" />
+    <Compile Include="Common\EventUtil.cs" />
+    <Compile Include="Common\TypeExtensions.cs" />
+    <Compile Include="Common\UserProfileRedirectControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Util.cs" />
+    <Compile Include="EventReceiver\EHUploadDocument.cs" />
+    <Compile Include="SharePointServices\ISharePointService.cs" />
+    <Compile Include="Common\MailAlertConfig.cs" />
+    <Compile Include="Common\SPLayoutsPageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\SerializeUtil.cs" />
+    <Compile Include="SharePointServices\ServiceFactory.cs" />
+    <Compile Include="SharePointServices\SharePointDBUtil.cs" />
+    <Compile Include="SharePointServices\SharePointService.cs" />
+    <Compile Include="SharePointServices\SharePointServiceWithAdminPermission.cs" />
+    <Compile Include="Common\SiteLogManager.cs" />
+    <Compile Include="SharePointServices\SharePointUtil.cs" />
+    <Compile Include="Common\TransferDataManager.cs" />
+    <Compile Include="SharePointServices\UserProfileUtil.cs" />
+    <Compile Include="Common\WebRequestCommon.cs" />
+    <Compile Include="EventReceiver\EHDocumentLimit.cs" />
+    <Compile Include="MultiLangSuport\LanguageSwitch.cs" />
+    <Compile Include="MultiLangSuport\SPHttpApplication.cs" />
+    <Compile Include="MultiLangSuport\SPMasterPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MultiLangSuport\UICultureManager.cs" />
+    <Compile Include="MultiLangSuport\WPResource.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CA.SharePoint.CamlQuery\ClassDiagram1.cd" />
+    <None Include="CA.SharePoint.Utilities.snk" />
+    <None Include="MultiLangSuport\MultiLanConfig.stp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MultiLangSuport\Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CA.Web\CA.Web.csproj">
+      <Project>{2A298162-DBE6-4907-A52C-7A5C0560E3B5}</Project>
+      <Name>CA.Web %28CA.Web\CA.Web%29</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
